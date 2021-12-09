@@ -50,36 +50,73 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  background-color: transparent;
 }
 
 #primoQuadrato {
-  background-image: url(/cartella_immagini_ea/immagini_prima_section/apex_Legends.jpg);
+  background-image: url(cartella_immagini_ea/immagini_prima_section/apex_Legends.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
 }
 #secondoQuadrato {
-  background-image: url(/cartella_immagini_ea/immagini_prima_section/battlefield_2042.jpg);
+  background-image: url(cartella_immagini_ea/immagini_prima_section/battlefield_2042.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #terzoQuadrato {
-  background-image: url(/cartella_immagini_ea/immagini_prima_section/F1.jpg);
+  background-image: url(cartella_immagini_ea/immagini_prima_section/F1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #quartoQuadrato {
-  background-image: url(/cartella_immagini_ea/immagini_prima_section/fifa22.png);
+  background-image: url(cartella_immagini_ea/immagini_prima_section/fifa22.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #quintoQuadrato {
-  background-image: url(/cartella_immagini_ea/immagini_prima_section/need_For_Speed_HotPursuit.jpg);
+  background-image: url(cartella_immagini_ea/immagini_prima_section/need_For_Speed_HotPursuit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #sestoQuadrato {
-  background-image: url(/cartella_immagini_ea/immagini_prima_section/The_Sims_4.jpg);
+  background-image: url(cartella_immagini_ea/immagini_prima_section/The_Sims_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.column2>div {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 180px;
+  background-color: brown;
+  border: 1px solid black;
+}
+
+.primaimg{
+  border: 1px solid black;
+  /* height: 40% ; */
+  flex-grow: 2;
+}
+.miniarticolo{
+  border: 1px solid black;
+  /* height: 60%; */
+  flex-grow: 3;
+}
+
+#primoQuadrato1 .primaimg{
+  background-image: url(cartella_immagini_ea/immagini_prima_section/The_Sims_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ #secondoQuadrato2 .primaimg{
+  background-image: url(cartella_immagini_ea/immagini_prima_section/battlefield_2042.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quadratoMaledetto .primaimg{
+  background-image: url(cartella_immagini_ea/immagini_seconda_section/default_image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
