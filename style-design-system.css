@@ -1,7 +1,32 @@
 * {
   font-family: "Outfit", sans-serif;
   background-color: whitesmoke;
+  box-sizing: border-box;
+  margin: 0;
 }
+
+/* Header e nav-bar */
+
+.headerDiv {
+  min-width: 100%;
+  min-height: 40px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icons {
+  background-color: transparent;
+  max-height: 20px;
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Buttons */
 
 .btn {
   height: 60px;
@@ -23,6 +48,8 @@
   font-size: 20px;
   font-weight: 900;
 }
+
+/* Prima section */
 
 .container {
   min-width: 100%;
@@ -85,7 +112,9 @@
   background-repeat: no-repeat;
 }
 
-.column2>div {
+/* Seconda section */
+
+.column2 > div {
   display: flex;
   flex-direction: column;
   height: 250px;
@@ -94,28 +123,28 @@
   border: 1px solid black;
 }
 
-.primaimg{
+.primaimg {
   border: 1px solid black;
   /* height: 40% ; */
   flex-grow: 2;
 }
-.miniarticolo{
+.miniarticolo {
   border: 1px solid black;
   /* height: 60%; */
   flex-grow: 3;
 }
 
-#primoQuadrato1 .primaimg{
+#primoQuadrato1 .primaimg {
   background-image: url(cartella_immagini_ea/immagini_prima_section/The_Sims_4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
- #secondoQuadrato2 .primaimg{
+#secondoQuadrato2 .primaimg {
   background-image: url(cartella_immagini_ea/immagini_prima_section/battlefield_2042.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.quadratoMaledetto .primaimg{
+.quadratoMaledetto .primaimg {
   background-image: url(cartella_immagini_ea/immagini_seconda_section/default_image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
