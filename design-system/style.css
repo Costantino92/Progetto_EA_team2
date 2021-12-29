@@ -1,0 +1,496 @@
+:root {
+  --background-color-orange: #f56c2c;
+  --background-color-red: #ff4747;
+  --background-color-transparent: transparent;
+  --border-size: 2px;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: violet;
+}
+
+/* Orange Button */
+
+.btnSize {
+  height: 60px;
+  width: 168px;
+  margin: 10px;
+}
+
+.rel-pos {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.bttn {
+  background-color: var(--background-color-orange);
+  color: rgb(255, 255, 255);
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn.btnHover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color-orange);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn.btnHover:hover::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  background-color: #f56c2c;
+  color: white;
+}
+
+/* Transparent Button */
+
+.bttn-two {
+  background-color: var(--background-color-transparent);
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn-two.btnHover2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 2px solid black;
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn-two.btnHover2:hover::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  background-color: var(--background-color-transparent);
+}
+
+/* Red Button */
+
+.bttn-three {
+  background-color: var(--background-color-red);
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn-three.btnHover3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color-red);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn-three.btnHover3:hover::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  background-color: var(--background-color-red);
+}
+
+.paginationBttns {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  margin-top: 20px;
+}
+.previousBttn {
+  color: #585858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-grow: 2;
+  border: 2px solid #585858;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.previousBttn:hover {
+  cursor: default;
+}
+.numbersBttn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  flex-grow: 10;
+  border-top: 2px solid #585858;
+  border-bottom: 2px solid #585858;
+}
+.nextBttn {
+  color: #c2c2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-grow: 1;
+  border: 2px solid #585858;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.firstSpan {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #585858;
+  border-radius: 50%;
+}
+
+.secondSpan {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+.secondSpan:hover {
+  border: 2px solid #f3f3f3;
+  color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nextBttn:hover {
+  border: 2px solid #f3f3f3;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+
+.scrollBarPers {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.leftBttn {
+  height: 33px;
+  width: 30px;
+  border: 2px solid #4f4f4f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: #4f4f4f;
+  font-size: 30px;
+  flex-grow: 1;
+}
+.rightBttn {
+  height: 33px;
+  width: 30px;
+  border: 2px solid #f0f0f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: #f0f0f1;
+  font-size: 30px;
+  flex-grow: 1;
+}
+
+.scrollBarBttn {
+  height: 14px;
+  flex-grow: 50;
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 4px black;
+}
+.scrollBarBttnNav {
+  height: 14px;
+  width: 45%;
+  background-color: grey;
+  border-radius: 10px;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.dropPers {
+  background-color: white;
+  border-radius: 0;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+.dropup .dropdown-toggle::after {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+}
+
+.flex div {
+  margin-right: 35px;
+  margin-left: 20px;
+  height: 39px;
+  width: 150px;
+  /* padding: 8px; */
+  border-bottom: 1px solid lightgray;
+  transition: linear 500ms;
+}
+
+.flex div:hover {
+  padding-left: 20px;
+  transition: linear 500ms;
+}
+
+.flex div:last-child {
+  border: none;
+}
+
+.flex-row-space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 8px;
+}
+.secondDivContainer {
+  height: min-content;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bttnAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bttnBlueSize {
+  width: 400px;
+  transition: linear 200ms;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.bttnBlueSize:hover {
+  box-shadow: 0px 0px 30px 1px #2a7fff;
+  transform: scale(0.95);
+  transition: linear 200ms;
+}
+
+.titleComponent {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+.socialSvgs {
+  height: 150px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+.socialSvgs div {
+  transition: linear 200ms;
+}
+
+.socialSvgs div:hover {
+  transform: scale(1.4);
+  transition: linear 200ms;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorsPers {
+  height: 150px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+.colorsPers div {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+}
+
+.socialAndMainColors {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.headers {
+  height: 170px;
+  width: 300px;
+  border-radius: 8px;
+  /* text-align: center; */
+  color: black;
+  position: relative;
+}
+.headers h1,
+.headers h2,
+.headers h4,
+.headers h5 {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+.headers .titleComponent {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  height: 170px;
+  width: 300px;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.headersAndLogos {
+  display: flex;
+  justify-content: space-between;
+}
+.formPers {
+  border-radius: 8px;
+  padding: 20px 0;
+}
+.form-control {
+  height: 50px;
+  width: 63%;
+  margin-left: 18%;
+  background-color: #141724;
+  border-radius: 8px;
+  border: 2px solid #62626f;
+  transition: linear 300ms;
+}
+.form-label,
+.form-check {
+  margin-left: 18%;
+  color: white;
+  font-weight: bolder;
+}
+.form-check-input {
+  background-color: #141724;
+  border: #62626f;
+  border-radius: 4px;
+  transition: linear 300ms;
+}
+
+.form-control:hover {
+  border: 2px solid #908e97;
+  transition: linear 300ms;
+  box-shadow: 0 0 25px 20px #1e2133;
+}
+.form-control:focus {
+  border: 2px solid #ffffff;
+  transition: linear 300ms;
+  background-color: #141724;
+}
+
+.form-check-input:hover {
+  box-shadow: 0 0 25px 20px #1e2133;
+  transition: linear 300ms;
+}
+.form-check-input:focus {
+  border: 2px solid #ffffff;
+  transition: linear 300ms;
+  background-color: #1b4ab0;
+  box-shadow: 0 0 30px 2px #ffffff;
+}
+.mb-3 {
+  position: relative;
+}
+.eyeInput {
+  position: absolute;
+  right: 135px;
+  bottom: 8px;
+  border-radius: 8px;
+  height: 33px;
+  width: 40px;
+  background-color: #54545d6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 300ms;
+}
+.eyeInput:hover {
+  background-color: #141724;
+  transition: linear 300ms;
+  transform: scale(0.95);
+}
