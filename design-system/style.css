@@ -22,7 +22,6 @@ body {
   background: linear-gradient(181deg, violet, black);
   display: flex;
   justify-content: center;
-  overflow-y: hidden;
   background-repeat: no-repeat;
 }
 
@@ -545,7 +544,7 @@ body {
 .battleFieldCard {
   height: 350px;
   width: 350px;
-  background-image: url(/other-icons/battlefield_2042.jpg);
+  background-image: url(other-icons/battlefield_2042.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -564,7 +563,7 @@ body {
 .redCard {
   width: 350px;
   height: 145px;
-  background-image: url(/other-icons/ea-tile-generic-for-overlay.jpg.adapt.crop16x9.652w.jpg);
+  background-image: url(other-icons/ea-tile-generic-for-overlay.jpg.adapt.crop16x9.652w.jpg);
   background-size: cover;
   border-radius: 1px;
   top: 0px;
@@ -584,7 +583,7 @@ body {
 .azureCard {
   width: 535px;
   height: 300px;
-  background-image: url(/other-icons/about-image.jpg.adapt.crop16x9.652w.jpg);
+  background-image: url(other-icons/about-image.jpg.adapt.crop16x9.652w.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -614,7 +613,7 @@ body {
 .greyCard {
   width: 535px;
   height: 300px;
-  background-image: url(/other-icons/about-image1.jpg.adapt.crop16x9.652w.jpg);
+  background-image: url(other-icons/about-image1.jpg.adapt.crop16x9.652w.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -654,7 +653,7 @@ body {
   display: flex;
   align-items: flex-end;
 
-  background-image: url(/other-icons/mele-tile-accessibility.jpg.adapt.crop16x9.652w.jpg);
+  background-image: url(other-icons/mele-tile-accessibility.jpg.adapt.crop16x9.652w.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -668,7 +667,7 @@ body {
 .darkGreyCard {
   width: 350px;
   height: 200px;
-  background-image: url(/other-icons/ea-grid-3up-library-dark.png.adapt.crop16x9.652w.png);
+  background-image: url(other-icons/ea-grid-3up-library-dark.png.adapt.crop16x9.652w.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
