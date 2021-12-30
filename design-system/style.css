@@ -8,10 +8,22 @@
 * {
   font-family: "Outfit", sans-serif;
   font-weight: bold;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.my-5 {
+  margin-top: 2.4rem !important;
+  margin-bottom: 3.6rem !important;
 }
 
 body {
-  background-color: violet;
+  background: linear-gradient(181deg, violet, black);
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
 }
 
 /* Orange Button */
@@ -201,7 +213,6 @@ body {
   width: 300px;
   height: 70px;
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -306,6 +317,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   border-radius: 8px;
+  width: 700px;
 }
 .secondDivContainer {
   height: min-content;
@@ -346,7 +358,7 @@ body {
 
 .socialSvgs {
   height: 150px;
-  width: 300px;
+  width: 340px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -368,7 +380,7 @@ body {
 
 .colorsPers {
   height: 150px;
-  width: 300px;
+  width: 340px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -388,8 +400,8 @@ body {
   align-items: center;
 }
 .headers {
-  height: 170px;
-  width: 300px;
+  height: 200px;
+  width: 340px;
   border-radius: 8px;
   /* text-align: center; */
   color: black;
@@ -415,8 +427,8 @@ body {
 .logos {
   display: flex;
   flex-wrap: wrap;
-  height: 170px;
-  width: 300px;
+  height: 200px;
+  width: 340px;
   border-radius: 8px;
   justify-content: space-around;
   align-items: center;
@@ -478,7 +490,7 @@ body {
 }
 .eyeInput {
   position: absolute;
-  right: 135px;
+  right: 145px;
   bottom: 8px;
   border-radius: 8px;
   height: 33px;
@@ -493,4 +505,203 @@ body {
   background-color: #141724;
   transition: linear 300ms;
   transform: scale(0.95);
+}
+
+.formPers {
+  position: relative;
+}
+
+.col {
+  border-radius: 8px;
+}
+.row {
+  flex-wrap: nowrap;
+}
+.electronicSpan {
+  font-weight: 800;
+  color: tomato;
+  margin-right: 10px;
+}
+.dateSpan {
+  font-weight: bolder;
+}
+.card-title {
+  font-weight: unset;
+}
+
+.card {
+  width: 350px;
+  height: 455px;
+  top: 0px;
+  transition: all 300ms ease-out;
+  box-shadow: 0px 5px 5px rgba(56, 56, 56, 0.356);
+  border: none;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
+}
+.battleFieldCard {
+  height: 350px;
+  width: 350px;
+  background-image: url(/other-icons/battlefield_2042.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.battleFieldLogo {
+  height: 100px;
+  width: 200px;
+}
+.battleFieldLogo:hover {
+  background-color: red;
+}
+
+.redCard {
+  width: 350px;
+  height: 145px;
+  background-image: url(/other-icons/ea-tile-generic-for-overlay.jpg.adapt.crop16x9.652w.jpg);
+  background-size: cover;
+  border-radius: 1px;
+  top: 0px;
+  transition: all 300ms ease-out;
+  box-shadow: 0px 5px 5px rgba(56, 56, 56, 0.356);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+}
+.redCard:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
+}
+.azureCard {
+  width: 535px;
+  height: 300px;
+  background-image: url(/other-icons/about-image.jpg.adapt.crop16x9.652w.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  transition: ease-in-out 500ms;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+}
+.azureCard img {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  transition: linear 100ms;
+}
+
+.azureCard img:hover {
+  transform: scale(1.3);
+  transition: linear 100ms;
+  cursor: pointer;
+}
+
+.azureCard:hover {
+  transition: ease-in-out 500ms;
+  background-size: 110%;
+}
+.greyCard {
+  width: 535px;
+  height: 300px;
+  background-image: url(/other-icons/about-image1.jpg.adapt.crop16x9.652w.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  transition: ease-in-out 500ms;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.greyCard img {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  transition: linear 100ms;
+}
+
+.greyCard img:hover {
+  transform: scale(1.3);
+  transition: linear 100ms;
+  cursor: pointer;
+}
+
+.greyCard:hover {
+  transition: ease-in-out 500ms;
+  background-size: 110%;
+}
+
+.spansCards {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 75px;
+}
+.massEffectCard {
+  height: 310px;
+  width: 350px;
+  display: flex;
+  align-items: flex-end;
+
+  background-image: url(/other-icons/mele-tile-accessibility.jpg.adapt.crop16x9.652w.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.txtOfMEC {
+  height: 37%;
+  width: 100%;
+  background-color: white;
+  font-weight: bolder;
+  padding: 24px 14px;
+}
+.darkGreyCard {
+  width: 350px;
+  height: 200px;
+  background-image: url(/other-icons/ea-grid-3up-library-dark.png.adapt.crop16x9.652w.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  border-radius: 1px;
+  box-shadow: 0px 10px 5px rgba(22, 22, 22, 0.356);
+  transition: all 300ms ease-out;
+}
+
+.darkGreyCard img:hover {
+  transform: scale(1.3);
+  transition: linear 100ms;
+  cursor: pointer;
+}
+.darkGreyCard img {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  transition: linear 100ms;
+}
+
+.spansCardsDarkGreyCard {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.darkGreyCard:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
 }
