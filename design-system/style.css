@@ -656,7 +656,15 @@ body {
   background-image: url(other-icons/mele-tile-accessibility.jpg.adapt.crop16x9.652w.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all 300ms ease-out;
 }
+
+.massEffectCard:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
+}
+
 .txtOfMEC {
   height: 37%;
   width: 100%;
