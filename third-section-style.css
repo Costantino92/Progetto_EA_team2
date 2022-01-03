@@ -1,3 +1,29 @@
 body {
-    background-color: cadetblue;
+    margin : 0;
+    border : 0;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.thirdSection{
+    display: flex;
+    flex-flow: column wrap;
+    width:100vw;
+    height: 60vh;
+    background-color: tomato;
+
+}
+
+.thirdSection-mainSection{
+    order:1;
+    height: 80%;
+    background-color: turquoise;
+}
+
+.thirdSection-secondSection{
+
+    order:2;
+    background-color: violet;
 }
