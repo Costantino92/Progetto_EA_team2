@@ -6,6 +6,10 @@
     --border-size: 2px;
   }
 
+  *{
+    font-family: "Outfit", sans-serif;
+   
+  } 
 
 body {
     margin : 0;
@@ -42,13 +46,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 60%;
+    align-items: baseline;
+    padding-left: 450px;
+    width: 50%;
     height: 100%;
-   color: white; 
+    color: white; 
+    
 }
 
 
+
+.thirdSection_mainSectionElems  p {
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
 
 
 .thirdSection_mainSectionElems .bttnSize {
