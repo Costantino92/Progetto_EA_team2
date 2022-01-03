@@ -1,29 +1,31 @@
 body {
     margin : 0;
     border : 0;
-    background-color: whitesmoke;
+    background-color: rgb(196, 196, 196);
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
+    font-size: 1.5em;
 }
 
 .thirdSection{
     display: flex;
     flex-flow: column wrap;
-    width:100vw;
-    height: 60vh;
-    background-color: tomato;
-
+    width: 100vw;
+    height: 70vh;
+    background-color: lawngreen;
 }
 
-.thirdSection-mainSection{
-    order:1;
+.thirdSection_mainSection{
+    
     height: 80%;
-    background-color: turquoise;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/cartella_immagini_ea/immagini_penultima_section/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
 }
 
-.thirdSection-secondSection{
-
-    order:2;
-    background-color: violet;
+.thirdSection_secondSection{
+   
+    height: 20%;
+    background-color: #6fb0d6;
 }
