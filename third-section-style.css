@@ -1,3 +1,11 @@
+:root {
+    --background-color-orange: #f56c2c;
+    --background-color-red: #ff4747;
+    --background-color-transparent: transparent;
+    --border-size: 2px;
+  }
+
+
 body {
     margin : 0;
     border : 0;
@@ -14,6 +22,7 @@ body {
     width: 100vw;
     height: 70vh;
     background-color: lawngreen;
+   
 }
 
 .thirdSection_mainSection{
@@ -21,11 +30,56 @@ body {
     height: 80%;
     background-repeat: no-repeat;
     background-size: cover;
+   
     background-image: url(/cartella_immagini_ea/immagini_penultima_section/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
 }
 
 .thirdSection_secondSection{
-   
+    display: flex;
+     justify-content: space-evenly;
+     align-items: center;
     height: 20%;
+    z-index: 1;
     background-color: #6fb0d6;
+    padding-left: 200px;
 }
+
+.btnSize {
+    height: 60px;
+    width: 168px;
+    margin: 10px;
+    font-size: 0.7em;
+  }
+
+  
+
+.bttn-two {
+    
+    background-color: var(--background-color-transparent);
+    padding: 0.5em;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .bttn-two.btnHover2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 2px solid black;
+    transition: top, left, right, bottom, 100ms ease-in-out;
+    border-radius: 4px;
+  }
+  
+  .bttn-two.btnHover2:hover::before {
+    top: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+    background-color: var(--background-color-transparent);
+  }
