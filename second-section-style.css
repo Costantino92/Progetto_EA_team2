@@ -10,6 +10,7 @@
 
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
@@ -25,9 +26,11 @@ body {
 .secondSection_mainSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: rgb(237, 237, 237);
-  height: 60%;
+  border-bottom: 2px solid rgb(228, 228, 228);
+  height: 70%;
 }
 .secondSection_mainSection h3 {
   font-size: 1.9em;
@@ -39,9 +42,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(53, 116, 197);
+  height: 80px;
+  width: 70%;
+  padding-top: 50px;
+  padding-right: 100px;
+  /* background-color: rgb(218, 218, 218); */
 }
 
 .secondSection_mainSection > nav > ul {
@@ -49,7 +54,25 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 50%;
+  width: 100%;
+}
+
+.secondSection_mainSection li:not(:last-child)::after {
+  content: " | ";
+  padding: 5px;
+}
+
+.secondSection_mainSection li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  /* padding-right: 20px; */
+}
+
+.secondSection_mainSection li:hover {
+  background-color: rgb(228, 228, 228);
 }
 
 .secondSection_mainSection > nav > ul > li > a {
@@ -78,7 +101,7 @@ body {
   background-color: #f3f3f3;
   width: 100%;
   gap: 15px;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .secondSection_secondSection .firstLineCards {
@@ -122,9 +145,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  height: 100px;
   z-index: 1;
+  padding-bottom: 50px;
 }
 
 .secondSection_button .btnSize {
