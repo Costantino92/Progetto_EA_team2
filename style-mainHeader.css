@@ -4,15 +4,15 @@
   padding: 0;
 }
 
-.headerDiv {
+.mainHeader .headerDiv {
   min-width: 100%;
   min-height: 40px;
-  background-color: black;
+  background-color: #161616;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.icons {
+.mainHeader .icons {
   background-color: transparent;
   max-height: 20px;
   width: 200px;
@@ -21,15 +21,59 @@
   justify-content: space-around;
   align-items: center;
 }
-.icons div {
+.mainHeader .icons div {
   cursor: pointer;
   display: block;
-
   fill: darkgray;
   background-color: transparent;
 }
 
-.icons div svg {
+.mainHeader .icons > div > svg {
   width: 20px;
   height: 20px;
+}
+.icons div svg:hover {
+  filter: brightness(150%);
+}
+
+.mainHeader .navBar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.mainHeader .navBarDots {
+  height: 19px;
+  width: fit-content;
+  transform: rotate(90deg);
+  margin-left: 20px;
+}
+.divAlignLeft {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.divLinks {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+}
+.divLinks div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eaImg {
+  padding: 0 30px;
+}
+
+.divLinks div img {
+  margin-left: 15px;
+  transition: linear 0.5s;
+}
+
+.divLinks div img:hover {
+  transform: rotateX(180deg);
+  transition: linear 0.5s;
 }
