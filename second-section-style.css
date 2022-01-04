@@ -9,19 +9,16 @@
 }
 
 * {
-  font-family: "Outfit", sans-serif;
   box-sizing: border-box;
 }
 
 body {
   box-sizing: border-box;
-  font-size: 1.5em;
 }
 
 .secondSection {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   background-color: #f3f3f3;
 }
 
@@ -29,8 +26,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: brown;
-  height: 20%;
+  background-color: rgb(237, 237, 237);
+  height: 60%;
 }
 .secondSection_mainSection h3 {
   font-size: 1.9em;
@@ -40,9 +37,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50%;
+  height: 100%;
   width: 100%;
-  background-color: cadetblue;
+  background-color: rgb(53, 116, 197);
 }
 
 .secondSection_mainSection > nav > ul {
@@ -59,11 +56,58 @@ body {
 }
 
 .secondSection_secondSection {
-  background-color: blue;
-  height: 80%;
+  height: 100%;
 }
 
-.secondSection_secondSection .secondSection_Cards {
-  background-color: rgb(17, 140, 97);
+.secondSection_secondSection .secondSection_cards {
+  background-color: rgb(197, 25, 25);
+  display: flex;
+  width: 100%;
   height: 100%;
+}
+
+.secondSection_secondSection .cards_elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  gap: 20px;
+  padding: 100px 0;
+}
+
+.secondSection_secondSection .firstLineCards {
+  display: flex;
+  gap: 20px;
+}
+.secondSection_secondSection .secondLineCards {
+  display: flex;
+  gap: 20px;
+}
+
+.electronicSpan {
+  font-weight: 800;
+  color: tomato;
+  margin-right: 10px;
+}
+.dateSpan {
+  font-weight: bolder;
+}
+.card-title {
+  font-weight: unset;
+}
+
+.card {
+  width: 350px;
+  height: 455px;
+  top: 0px;
+  transition: all 300ms ease-out;
+  box-shadow: 0px 5px 5px rgba(56, 56, 56, 0.356);
+  border: none;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
 }
