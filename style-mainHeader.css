@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.headerDiv {
+  min-width: 100%;
+  min-height: 40px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icons {
+  background-color: transparent;
+  max-height: 20px;
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons div {
+  cursor: pointer;
+  display: block;
+
+  fill: darkgray;
+  background-color: transparent;
+}
+
+.icons div svg {
+  width: 20px;
+  height: 20px;
+}
