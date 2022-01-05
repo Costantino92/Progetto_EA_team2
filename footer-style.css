@@ -121,6 +121,10 @@ padding: 10px; /* da rivedere il valore corretto*/
         border-bottom: none !important;
         border-left: none !important;
       }
+      .language-link{
+        text-decoration: none;
+        color: black;
+      }
       .flex {
         display: flex;
         flex-direction: column;
