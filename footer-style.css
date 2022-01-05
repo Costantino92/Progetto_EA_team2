@@ -37,7 +37,16 @@ padding: 10px; /* da rivedere il valore corretto*/
     display: flex;
     height: auto;
     width: auto;
-    background: #f3f3f3
+    background: #f3f3f3;
+    display: flex;
+    width: 100%;
+    /* padding: 12px 76px 12px; */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    
+    
+  
 }
 .terms-and-conditions-container{
     padding-top: 5%;  
@@ -84,11 +93,7 @@ padding: 10px; /* da rivedere il valore corretto*/
     transform: scale(1.4);
     transition: linear 200ms;
   }
-  .footer-down{
-      display: flex;
-      width: 100%;
-      padding: 12px 76px 12px;
-  }
+
   .footer-down-menu>ul>li{
     display:inline-block;
     padding: 10px; /* da rivedere il valore corretto*/
@@ -169,4 +174,5 @@ padding: 10px; /* da rivedere il valore corretto*/
 
     .footer-down-center-down{
          display: flex;
+         padding-top: 3%;
         }
