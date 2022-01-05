@@ -77,9 +77,10 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.5em;
   font-weight: lighter;
-  left: 19px;
+  left: 17.5px;
   color: rgb(199, 199, 199);
 }
 
@@ -90,7 +91,7 @@ body {
 .secondSection_mainSection > nav > ul > li > div > a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 0.9em;
 }
 
 /* SECOND_SECTION */
@@ -179,7 +180,7 @@ body {
   height: 60px;
   width: 168px;
   margin: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .secondSection_button .bttn-two {
