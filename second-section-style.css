@@ -43,8 +43,8 @@ body {
 
 .secondSection_mainSection nav {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   height: 120px;
   width: 100%;
   padding-top: 60px;
@@ -60,7 +60,8 @@ body {
   list-style: none;
   width: 100%;
   row-gap: 2px;
-  /* background-color: blue; */
+  padding-top: 20px;
+  /* background-color: #6fb0d6; */
 }
 
 .secondSection_mainSection li div {
@@ -68,18 +69,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 15px;
+  padding: 14px;
 }
 
 .secondSection_Div::after {
   content: " | ";
   position: relative;
-  left: 18px;
-  color: rgb(208, 208, 208);
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: lighter;
+  left: 19px;
+  color: rgb(199, 199, 199);
 }
 
 .secondSection_mainSection div:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(221, 221, 221);
 }
 
 .secondSection_mainSection > nav > ul > li > div > a {
@@ -95,6 +100,16 @@ body {
 }
 
 /* SECOND_SECTION: CARDS */
+
+.card {
+  border: 0px;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 .secondSection_secondSection .secondSection_cards {
   background-color: rgb(197, 25, 25);
@@ -123,27 +138,28 @@ body {
   gap: 15px;
 }
 
-.electronicSpan {
+.secondSection .electronicSpan {
   font-weight: 800;
   color: tomato;
   margin-right: 10px;
 }
-.dateSpan {
+.secondSection .dateSpan {
   font-weight: bolder;
 }
-.card-title {
+.secondSection .card-title {
   font-weight: unset;
 }
 
-.card {
+.secondSection .card {
   width: 350px;
   height: 455px;
   top: 0px;
   transition: all 300ms ease-out;
   box-shadow: 0px 5px 5px rgba(56, 56, 56, 0.356);
-  border: none;
+  border-radius: 0;
 }
-.card:hover {
+
+.secondSection .card:hover {
   transform: translateY(-10px);
   transition: all 300ms ease-out;
   box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
