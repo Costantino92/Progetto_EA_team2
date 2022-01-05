@@ -35,8 +35,8 @@ body {
 .secondSection_mainSection h3 {
   display: flex;
   align-items: flex-end;
-  height: 200px;
-  font-size: 1.9em;
+  font-size: 2.2em;
+  font-weight: 600;
 }
 
 /* SECOND_SECTION: NAVBAR */
@@ -76,10 +76,6 @@ body {
   position: relative;
   left: 18px;
   color: rgb(208, 208, 208);
-}
-
-.lastDiv::after {
-  content: none;
 }
 
 .secondSection_mainSection div:hover {
