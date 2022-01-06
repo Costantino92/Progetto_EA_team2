@@ -32,7 +32,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  background-image: url(/cartella_immagini_ea/immagini_penultima_section/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
+  background-image: url(cartella_immagini_ea/immagini_penultima_section/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
 }
 
 .thirdSection_mainSectionElems {
