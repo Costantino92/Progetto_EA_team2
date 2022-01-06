@@ -1,0 +1,154 @@
+.firstSection {
+  margin: 4% 0;
+}
+
+:root {
+  --background-color-orange: #f56c2c;
+  --background-color-red: #ff4747;
+  --background-color-transparent: transparent;
+  --border-size: 2px;
+}
+
+.classFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.classFlexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.classTxtAlignCenter {
+  text-align: center;
+}
+
+.titleDiv h1 {
+  font-size: 45px;
+  margin-bottom: 3%;
+}
+
+.btnSize {
+  height: 60px;
+  width: 168px;
+  margin: 10px;
+}
+
+.bttn-two {
+  background-color: var(--background-color-transparent);
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 2%;
+  font-size: 16px;
+}
+
+.bttn-two.btnHover2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 2px solid black;
+  transition: top, left, right, bottom, 100ms linear;
+  border-radius: 4px;
+}
+
+.bttn-two.btnHover2:hover::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+  background-color: var(--background-color-transparent);
+}
+
+.battleFieldCard {
+  height: 350px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.bgImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(design-system/other-icons/battlefield_2042.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgImage2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cartella_immagini_ea/immagini_prima_section/fifa22.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgImage3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cartella_immagini_ea/immagini_prima_section/F1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgImage4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cartella_immagini_ea/immagini_prima_section/need_For_Speed_HotPursuit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgImage5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cartella_immagini_ea/immagini_prima_section/apex_Legends.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgImage6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(cartella_immagini_ea/immagini_prima_section/The_Sims_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradientColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  background: rgb(36, 0, 10);
+  background: linear-gradient(
+    67deg,
+    rgba(36, 0, 10, 1) 0%,
+    rgba(13, 31, 71, 0.938) 0%,
+    rgba(221, 15, 46, 0.8) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.gradientColor h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.battleFieldLogo {
+  height: max-content;
+  width: 150px;
+  transition: all 300ms ease-out;
+  z-index: 2;
+}

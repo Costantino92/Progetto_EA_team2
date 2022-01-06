@@ -35,3 +35,27 @@ divBgImg.addEventListener("mouseout", () => {
   divBgImg.firstElementChild.style.transition = "ease 0.5s";
   btnTwo.style.opacity = "0";
 });
+
+// Cards
+const battlefieldCard = document.querySelectorAll(".battleFieldCard");
+
+for (let i = 0; i < battlefieldCard.length; i++) {
+  const battlefieldLogo = document.querySelectorAll(".battleFieldLogo");
+  const gradientColor = document.querySelectorAll(".gradientColor");
+
+  battlefieldCard[i].addEventListener("mouseover", animCard);
+  battlefieldCard[i].addEventListener("mouseout", disAnimCard);
+
+  function animCard() {
+    battlefieldLogo[i].style.transform = "translateY(-60px)";
+    battlefieldLogo[i].style.transition = "all 300ms ease-out;";
+    gradientColor[i].style.opacity = "1";
+    gradientColor[i].style.color = "white";
+  }
+
+  function disAnimCard() {
+    battlefieldLogo[i].style.transform = "translateY(0)";
+    battlefieldLogo[i].style.transition = "all 300ms ease-out;";
+    gradientColor[i].style.opacity = "0";
+  }
+}
