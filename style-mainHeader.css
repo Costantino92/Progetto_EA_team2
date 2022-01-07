@@ -11,6 +11,13 @@
   padding: 0;
 }
 
+.mainHeader {
+  position: relative;
+  overflow: visible;
+  height: fit-content;
+  padding-top: 40px;
+}
+
 .mainHeader .headerDiv {
   min-width: 100%;
   min-height: 40px;
@@ -18,6 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 .mainHeader .icons {
   background-color: transparent;
@@ -47,6 +58,9 @@
   height: 50px;
   display: flex;
   align-items: center;
+  /* margin-top: 40px; */
+  border: 1px solid red;
+  z-index: 4;
 }
 .mainHeader .navBarDots {
   height: 19px;

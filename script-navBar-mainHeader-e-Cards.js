@@ -10,15 +10,14 @@ function expanse() {
     headerDiv.style.height = "450px";
     headerDiv.style.alignItems = "unset";
     icons.style.marginTop = "10px";
+    headerDiv.style.transition = "ease-in-out 0.3s";
   } else {
     headerDiv.style.height = "40px";
+    headerDiv.style.transition = "ease-in-out 0.3s";
   }
 }
 
 firstDivFirstIcon.addEventListener("click", expanse);
-
-const mainHeader = firstDivFirstIcon.parentNode.parentNode.parentNode;
-console.log(mainHeader);
 
 // firstIcon.addEventListener("click", () => {
 //   firstDivFirstIcon;
