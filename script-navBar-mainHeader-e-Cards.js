@@ -17,6 +17,12 @@ function expanse() {
 
 firstDivFirstIcon.addEventListener("click", expanse);
 
+const mainHeader = firstDivFirstIcon.parentNode.parentNode.parentNode;
+console.log(mainHeader);
+
+// firstIcon.addEventListener("click", () => {
+//   firstDivFirstIcon;
+// });
 //---------------------------- End NavBar Animation -------------------------------
 
 //---------------------------- Arrows NavBar -------------------------------
