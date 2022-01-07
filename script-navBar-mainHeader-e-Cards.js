@@ -1,3 +1,8 @@
+//---------------------------- NavBar Animation -------------------------------
+
+//---------------------------- End NavBar Animation -------------------------------
+
+//---------------------------- Arrows NavBar -------------------------------
 let childrenOfDivLinks = document.querySelector(".divLinks").children;
 
 for (let i = 0; i < childrenOfDivLinks.length; i++) {
@@ -21,6 +26,10 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
   });
 }
 
+//---------------------------- End Arrows NavBar -----------------------------
+
+//---------------------------- Cards Animation -------------------------------
+
 let divBgImg = document.querySelector(".bgImg");
 let btnTwo = document.querySelector(".bttn-two");
 
@@ -36,7 +45,6 @@ divBgImg.addEventListener("mouseout", () => {
   btnTwo.style.opacity = "0";
 });
 
-// Cards
 const battlefieldCard = document.querySelectorAll(".battleFieldCard");
 
 for (let i = 0; i < battlefieldCard.length; i++) {
@@ -59,3 +67,5 @@ for (let i = 0; i < battlefieldCard.length; i++) {
     gradientColor[i].style.opacity = "0";
   }
 }
+
+//---------------------------- End Cards Animation -------------------------------
