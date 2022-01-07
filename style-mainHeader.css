@@ -53,6 +53,7 @@
   width: fit-content;
   margin-left: 20px;
   transition: linear 0.2s;
+  margin-bottom: 13px;
 }
 .divAlignLeft {
   height: 100%;
