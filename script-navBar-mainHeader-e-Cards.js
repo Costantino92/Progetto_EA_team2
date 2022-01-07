@@ -1,4 +1,21 @@
 //---------------------------- NavBar Animation -------------------------------
+const firstDivFirstIcon = document.querySelector(".icons").firstElementChild;
+console.log(firstDivFirstIcon);
+const headerDiv = document.querySelector(".headerDiv");
+const icons = document.querySelector(".icons");
+console.log(headerDiv);
+
+function expanse() {
+  if (headerDiv.style.height === "40px") {
+    headerDiv.style.height = "450px";
+    headerDiv.style.alignItems = "unset";
+    icons.style.marginTop = "10px";
+  } else {
+    headerDiv.style.height = "40px";
+  }
+}
+
+firstDivFirstIcon.addEventListener("click", expanse);
 
 //---------------------------- End NavBar Animation -------------------------------
 
