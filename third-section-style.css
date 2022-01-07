@@ -15,8 +15,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   font-size: 1.5em;
 }
 
@@ -25,7 +23,7 @@ body {
 .thirdSection {
   display: flex;
   flex-flow: column wrap;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
 }
 
@@ -34,7 +32,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  background-image: url(/cartella_immagini_ea/immagini_penultima_section/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
+  background-image: url(cartella_immagini_ea/immagini_penultima_section/hero-medium-console-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
 }
 
 .thirdSection_mainSectionElems {
@@ -49,7 +47,7 @@ body {
 
 .thirdSection_mainSectionElems p {
   color: var(--white-color);
-  font-size: 1.2rem;
+  font-size: 1.2em;
   padding-left: 10px;
 }
 
@@ -59,7 +57,7 @@ body {
   height: 60px;
   width: 168px;
   margin: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .thirdSection_mainSectionElems .bttn-one {
@@ -105,7 +103,7 @@ body {
 }
 
 .thirdSection_secondSection h3 {
-  font-size: 1.6rem;
+  font-size: 1.2em;
   font-weight: 600;
   color: #161616;
 }
@@ -116,7 +114,7 @@ body {
   height: 60px;
   width: 168px;
   margin: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .thirdSection .bttn-two {
