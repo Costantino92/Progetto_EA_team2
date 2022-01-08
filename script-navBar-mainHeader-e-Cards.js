@@ -1,6 +1,6 @@
 //---------------------------- NavBar Animation -------------------------------
 
-//  section of constants
+//---------------------------- Section of Constants ---------------------------
 const firstDivFirstIcon = document.querySelector(".icons").firstElementChild;
 const headerDiv = document.querySelector(".headerDiv");
 const icons = document.querySelector(".icons");
@@ -18,7 +18,7 @@ h3divRedTwo.textContent = "Crea Account";
 h3divRedTwo.style.fontSize = "1rem";
 h3divRedTwo.style.fontWeight = "300";
 h3divRedTwo.style.paddingTop = "10px";
-// END section of constants
+//---------------------------- END Section of Constants -------------------------
 
 divTest.style.position = "absolute";
 divTest.style.top = "0";
@@ -37,7 +37,7 @@ const svgRegisterIcon = document.createElement("img");
 svgRegisterIcon.style.width = "36px";
 svgRegisterIcon.src = "design-system/other-icons/eaglobalnav-iconregister.svg";
 
-//---------------------------- END Working on img svg -------------------------------
+//---------------------------- END Working on img svg ----------------------------
 
 divFatherRed.style.display = "flex";
 divFatherRed.style.justifyContent = "space-between";
@@ -47,29 +47,35 @@ divFatherRed.style.height = "200px";
 divFatherRed.style.width = "360px";
 divFatherRed.style.opacity = "1";
 
-//---------------------------- Working on first red icon -------------------------------
+//----------------------------  first red icon -----------------------------------
 // divRedIconOne.style.backgroundColor = "blue";
 divRedIconOne.style.position = "relative";
 divRedIconOne.style.display = "flex";
 divRedIconOne.style.alignItems = "center";
 divRedIconOne.style.flexDirection = "column";
 divRedIconOne.style.color = "white";
-//---------------------------- END Working on first red icon -------------------------------
+divRedIconOne.style.cursor = "pointer";
+//---------------------------- END  first red icon --------------------------------
 
-//---------------------------- Working on second red icon -------------------------------
+//----------------------------  second red icon -----------------------------------
 // divRedIconTwo.style.backgroundColor = "blue";
 divRedIconTwo.style.position = "relative";
 divRedIconTwo.style.display = "flex";
 divRedIconTwo.style.flexDirection = "column";
 divRedIconTwo.style.alignItems = "center";
 divRedIconTwo.style.color = "white";
+divRedIconTwo.style.cursor = "pointer";
 
-//---------------------------- END Working on second red icon -------------------------------
+//---------------------------- END second red icon ---------------------------------
+
+//----------------------------  section of appendChilds ----------------------------
 
 divRedIconOne.appendChild(svgSignIn);
 divRedIconTwo.appendChild(svgRegisterIcon);
 divRedIconOne.appendChild(h3divRedOne);
 divRedIconTwo.appendChild(h3divRedTwo);
+
+//---------------------------- END section of appendChilds --------------------------
 
 headerDiv.style.minHeight = "40px";
 
@@ -95,28 +101,31 @@ function expanse() {
   }
 }
 
+//---------------------------- AddEventListener -------------------------------------
+
 firstDivFirstIcon.addEventListener("click", expanse);
 
 divRedIconOne.addEventListener("mouseover", () => {
-  divRedIconOne.style.transform = "translateY(-10px)";
+  divRedIconOne.style.transform = "translateY(-6px)";
+  divRedIconOne.style.transition = "all 150ms ease-out";
 });
 divRedIconOne.addEventListener("mouseout", () => {
   divRedIconOne.style.transform = "translateY(0)";
 });
 
 divRedIconTwo.addEventListener("mouseover", () => {
-  divRedIconTwo.style.transform = "translateY(-10px)";
+  divRedIconTwo.style.transform = "translateY(-6px)";
+  divRedIconTwo.style.transition = "all 150ms ease-out";
 });
 divRedIconTwo.addEventListener("mouseout", () => {
   divRedIconTwo.style.transform = "translateY(0)";
 });
 
-// firstIcon.addEventListener("click", () => {
-//   firstDivFirstIcon;
-// });
-//---------------------------- End NavBar Animation -------------------------------
+//----------------------------END  AddEventListener ----------------------------------
 
-//---------------------------- Arrows NavBar -------------------------------
+//---------------------------- End NavBar Animation ----------------------------------
+
+//---------------------------- Arrows NavBar -----------------------------------------
 let childrenOfDivLinks = document.querySelector(".divLinks").children;
 
 for (let i = 0; i < childrenOfDivLinks.length; i++) {
@@ -140,9 +149,9 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
   });
 }
 
-//---------------------------- End Arrows NavBar -----------------------------
+//---------------------------- End Arrows NavBar -------------------------------------
 
-//---------------------------- Cards Animation -------------------------------
+//---------------------------- Cards Animation ---------------------------------------
 
 let divBgImg = document.querySelector(".bgImg");
 let btnTwo = document.querySelector(".bttn-two");
@@ -182,4 +191,4 @@ for (let i = 0; i < battlefieldCard.length; i++) {
   }
 }
 
-//---------------------------- End Cards Animation -------------------------------
+//---------------------------- End Cards Animation ------------------------------------
