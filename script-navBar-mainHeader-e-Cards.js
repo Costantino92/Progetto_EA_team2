@@ -1,4 +1,6 @@
 //---------------------------- NavBar Animation -------------------------------
+
+//  section of constants
 const firstDivFirstIcon = document.querySelector(".icons").firstElementChild;
 const headerDiv = document.querySelector(".headerDiv");
 const icons = document.querySelector(".icons");
@@ -6,6 +8,18 @@ const divFatherRed = document.createElement("div");
 const divRedIconOne = document.createElement("div");
 const divRedIconTwo = document.createElement("div");
 const divTest = document.createElement("div");
+const h3divRedOne = document.createElement("h3");
+h3divRedOne.textContent = "Accedi";
+h3divRedOne.style.fontSize = "1rem";
+h3divRedOne.style.fontWeight = "300";
+h3divRedOne.style.paddingTop = "10px";
+const h3divRedTwo = document.createElement("h3");
+h3divRedTwo.textContent = "Crea Account";
+h3divRedTwo.style.fontSize = "1rem";
+h3divRedTwo.style.fontWeight = "300";
+h3divRedTwo.style.paddingTop = "10px";
+// END section of constants
+
 divTest.style.position = "absolute";
 divTest.style.top = "0";
 divTest.style.left = "0";
@@ -14,32 +28,49 @@ divTest.style.bottom = "0";
 divTest.style.display = "flex";
 divTest.style.justifyContent = "center";
 divTest.style.alignItems = "center";
+//---------------------------- Working on img svg -------------------------------
+
 const svgSignIn = document.createElement("img");
-svgSignIn.src = "/design-system/other-icons/eaglobalnav-iconsignin.svg";
+svgSignIn.style.width = "36px";
+svgSignIn.src = "design-system/other-icons/eaglobalnav-iconsignin.svg";
 const svgRegisterIcon = document.createElement("img");
-svgRegisterIcon.src = "/design-system/other-icons/eaglobalnav-iconregister.svg";
+svgRegisterIcon.style.width = "36px";
+svgRegisterIcon.src = "design-system/other-icons/eaglobalnav-iconregister.svg";
+
+//---------------------------- END Working on img svg -------------------------------
+
 divFatherRed.style.display = "flex";
 divFatherRed.style.justifyContent = "space-between";
 divFatherRed.style.alignItems = "center";
 divFatherRed.style.height = "200px";
 // divFatherRed.style.position = "absolute";
-divFatherRed.style.width = "330px";
+divFatherRed.style.width = "360px";
 divFatherRed.style.opacity = "1";
-// divFatherRed.style.top = "150px";
-// divFatherRed.style.right = "800px";
-// divFatherRed.style.backgroundColor = "orange";
+
+//---------------------------- Working on first red icon -------------------------------
 // divRedIconOne.style.backgroundColor = "blue";
-divRedIconOne.style.height = "36px";
-divRedIconOne.style.width = "36px";
 divRedIconOne.style.position = "relative";
 divRedIconOne.style.display = "flex";
+divRedIconOne.style.alignItems = "center";
+divRedIconOne.style.flexDirection = "column";
+divRedIconOne.style.color = "white";
+//---------------------------- END Working on first red icon -------------------------------
+
+//---------------------------- Working on second red icon -------------------------------
 // divRedIconTwo.style.backgroundColor = "blue";
-divRedIconTwo.style.height = "36px";
-divRedIconTwo.style.width = "36px";
 divRedIconTwo.style.position = "relative";
 divRedIconTwo.style.display = "flex";
+divRedIconTwo.style.flexDirection = "column";
+divRedIconTwo.style.alignItems = "center";
+divRedIconTwo.style.color = "white";
+
+//---------------------------- END Working on second red icon -------------------------------
+
 divRedIconOne.appendChild(svgSignIn);
 divRedIconTwo.appendChild(svgRegisterIcon);
+divRedIconOne.appendChild(h3divRedOne);
+divRedIconTwo.appendChild(h3divRedTwo);
+
 headerDiv.style.minHeight = "40px";
 
 function expanse() {
@@ -65,6 +96,20 @@ function expanse() {
 }
 
 firstDivFirstIcon.addEventListener("click", expanse);
+
+divRedIconOne.addEventListener("mouseover", () => {
+  divRedIconOne.style.transform = "translateY(-10px)";
+});
+divRedIconOne.addEventListener("mouseout", () => {
+  divRedIconOne.style.transform = "translateY(0)";
+});
+
+divRedIconTwo.addEventListener("mouseover", () => {
+  divRedIconTwo.style.transform = "translateY(-10px)";
+});
+divRedIconTwo.addEventListener("mouseout", () => {
+  divRedIconTwo.style.transform = "translateY(0)";
+});
 
 // firstIcon.addEventListener("click", () => {
 //   firstDivFirstIcon;
