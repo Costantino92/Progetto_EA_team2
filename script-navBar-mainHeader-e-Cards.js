@@ -1,19 +1,66 @@
 //---------------------------- NavBar Animation -------------------------------
 const firstDivFirstIcon = document.querySelector(".icons").firstElementChild;
-console.log(firstDivFirstIcon);
 const headerDiv = document.querySelector(".headerDiv");
 const icons = document.querySelector(".icons");
-console.log(headerDiv);
+const divFatherRed = document.createElement("div");
+const divRedIconOne = document.createElement("div");
+const divRedIconTwo = document.createElement("div");
+const divTest = document.createElement("div");
+divTest.style.position = "absolute";
+divTest.style.top = "0";
+divTest.style.left = "0";
+divTest.style.right = "0";
+divTest.style.bottom = "0";
+divTest.style.display = "flex";
+divTest.style.justifyContent = "center";
+divTest.style.alignItems = "center";
+const svgSignIn = document.createElement("img");
+svgSignIn.src = "/design-system/other-icons/eaglobalnav-iconsignin.svg";
+const svgRegisterIcon = document.createElement("img");
+svgRegisterIcon.src = "/design-system/other-icons/eaglobalnav-iconregister.svg";
+divFatherRed.style.display = "flex";
+divFatherRed.style.justifyContent = "space-between";
+divFatherRed.style.alignItems = "center";
+divFatherRed.style.height = "200px";
+// divFatherRed.style.position = "absolute";
+divFatherRed.style.width = "330px";
+divFatherRed.style.opacity = "1";
+// divFatherRed.style.top = "150px";
+// divFatherRed.style.right = "800px";
+// divFatherRed.style.backgroundColor = "orange";
+// divRedIconOne.style.backgroundColor = "blue";
+divRedIconOne.style.height = "36px";
+divRedIconOne.style.width = "36px";
+divRedIconOne.style.position = "relative";
+divRedIconOne.style.display = "flex";
+// divRedIconTwo.style.backgroundColor = "blue";
+divRedIconTwo.style.height = "36px";
+divRedIconTwo.style.width = "36px";
+divRedIconTwo.style.position = "relative";
+divRedIconTwo.style.display = "flex";
+divRedIconOne.appendChild(svgSignIn);
+divRedIconTwo.appendChild(svgRegisterIcon);
+headerDiv.style.minHeight = "40px";
 
 function expanse() {
-  if (headerDiv.style.height === "40px") {
-    headerDiv.style.height = "450px";
+  // debugger;
+  if (headerDiv.style.minHeight === "40px") {
+    headerDiv.style.minHeight = "450px";
     headerDiv.style.alignItems = "unset";
     icons.style.marginTop = "10px";
     headerDiv.style.transition = "ease-in-out 0.3s";
+    headerDiv.appendChild(divTest);
+    divTest.appendChild(divFatherRed);
+    divFatherRed.appendChild(divRedIconOne);
+    divFatherRed.appendChild(divRedIconTwo);
+    icons.style.zIndex = "3";
+    divFatherRed.style.opacity = "1";
   } else {
-    headerDiv.style.height = "40px";
+    headerDiv.style.minHeight = "40px";
     headerDiv.style.transition = "ease-in-out 0.3s";
+    divFatherRed.style.transition = "linear 0.3s";
+    divFatherRed.style.opacity = "0";
+    headerDiv.style.backgroundColor = "#101010";
   }
 }
 
