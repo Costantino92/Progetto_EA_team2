@@ -1,6 +1,7 @@
 //---------------------------- NavBar Animation -------------------------------
 
 //---------------------------- Section of Constants ---------------------------
+const body = document.querySelector("body");
 const firstDivFirstIcon = document.querySelector(".icons").firstElementChild;
 const headerDiv = document.querySelector(".headerDiv");
 const icons = document.querySelector(".icons");
@@ -65,15 +66,13 @@ divRedIconOne.style.cursor = "pointer";
 //---------------------------- DivX style -------------------------
 
 divX.style.height = "30px";
-divX.style.width = "30px";
-// divX.style.backgroundColor = "red";
 divX.style.display = "flex";
 divX.style.justifyContent = "center";
 divX.style.alignItems = "center";
-divX.style.position = "relative";
-divX.style.right = "60px";
-divX.style.top = "90px";
 divX.style.cursor = "pointer";
+divX.style.position = "absolute";
+divX.style.top = "70px";
+divX.style.right = "40px";
 
 //---------------------------- END DivX style -------------------------
 
@@ -108,19 +107,21 @@ function expanse() {
     icons.style.marginTop = "10px";
     headerDiv.style.transition = "ease-in-out 0.3s";
     headerDiv.appendChild(divTest);
-    headerDiv.appendChild(divX);
+    icons.appendChild(divX);
     divTest.appendChild(divFatherRed);
     divFatherRed.appendChild(divRedIconOne);
     divFatherRed.appendChild(divRedIconTwo);
     icons.style.zIndex = "3";
     divFatherRed.style.opacity = "1";
+    body.style.overflowY = "hidden";
   } else {
     headerDiv.style.minHeight = "40px";
     headerDiv.style.transition = "ease-in-out 0.3s";
     divFatherRed.style.transition = "linear 0.3s";
     divFatherRed.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
-    headerDiv.removeChild(divX);
+    body.style.overflowY = "unset";
+    icons.removeChild(divX);
   }
 }
 
@@ -152,7 +153,8 @@ divX.addEventListener("click", () => {
     divFatherRed.style.transition = "linear 0.3s";
     divFatherRed.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
-    headerDiv.removeChild(divX);
+    body.style.overflowY = "unset";
+    icons.removeChild(divX);
   }
 });
 
