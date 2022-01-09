@@ -9,6 +9,7 @@ const divRedIconOne = document.createElement("div");
 const divRedIconTwo = document.createElement("div");
 const divTest = document.createElement("div");
 const h3divRedOne = document.createElement("h3");
+const divX = document.createElement("div");
 h3divRedOne.textContent = "Accedi";
 h3divRedOne.style.fontSize = "1rem";
 h3divRedOne.style.fontWeight = "300";
@@ -29,7 +30,8 @@ divTest.style.display = "flex";
 divTest.style.justifyContent = "center";
 divTest.style.alignItems = "center";
 //---------------------------- Working on img svg -------------------------------
-
+const svgXicon = document.createElement("img");
+svgXicon.src = "design-system/other-icons/x.svg";
 const svgSignIn = document.createElement("img");
 svgSignIn.style.width = "36px";
 svgSignIn.src = "design-system/other-icons/eaglobalnav-iconsignin.svg";
@@ -57,6 +59,16 @@ divRedIconOne.style.color = "white";
 divRedIconOne.style.cursor = "pointer";
 //---------------------------- END  first red icon --------------------------------
 
+divX.style.height = "30px";
+divX.style.width = "30px";
+// divX.style.backgroundColor = "red";
+divX.style.display = "flex";
+divX.style.justifyContent = "center";
+divX.style.alignItems = "center";
+divX.style.position = "relative";
+divX.style.right = "60px";
+divX.style.top = "90px";
+
 //----------------------------  second red icon -----------------------------------
 // divRedIconTwo.style.backgroundColor = "blue";
 divRedIconTwo.style.position = "relative";
@@ -68,17 +80,22 @@ divRedIconTwo.style.cursor = "pointer";
 
 //---------------------------- END second red icon ---------------------------------
 
+//----------------------------  x icon ---------------------------------------------
+
+//---------------------------- END x icon ------------------------------------------
+
 //----------------------------  section of appendChilds ----------------------------
 
 divRedIconOne.appendChild(svgSignIn);
 divRedIconTwo.appendChild(svgRegisterIcon);
 divRedIconOne.appendChild(h3divRedOne);
 divRedIconTwo.appendChild(h3divRedTwo);
+divX.appendChild(svgXicon);
 
 //---------------------------- END section of appendChilds --------------------------
 
 headerDiv.style.minHeight = "40px";
-
+console.log(divX);
 function expanse() {
   // debugger;
   if (headerDiv.style.minHeight === "40px") {
@@ -87,6 +104,7 @@ function expanse() {
     icons.style.marginTop = "10px";
     headerDiv.style.transition = "ease-in-out 0.3s";
     headerDiv.appendChild(divTest);
+    headerDiv.appendChild(divX);
     divTest.appendChild(divFatherRed);
     divFatherRed.appendChild(divRedIconOne);
     divFatherRed.appendChild(divRedIconTwo);
@@ -98,6 +116,7 @@ function expanse() {
     divFatherRed.style.transition = "linear 0.3s";
     divFatherRed.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
+    headerDiv.removeChild(divX);
   }
 }
 
