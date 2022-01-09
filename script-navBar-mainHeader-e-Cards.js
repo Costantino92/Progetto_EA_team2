@@ -29,13 +29,16 @@ divTest.style.bottom = "0";
 divTest.style.display = "flex";
 divTest.style.justifyContent = "center";
 divTest.style.alignItems = "center";
+
 //---------------------------- Working on img svg -------------------------------
-const svgXicon = document.createElement("img");
+const svgXicon = document.createElement("img"); // x icon//
 svgXicon.src = "design-system/other-icons/x.svg";
-const svgSignIn = document.createElement("img");
+
+const svgSignIn = document.createElement("img"); //sign in icon //
 svgSignIn.style.width = "36px";
 svgSignIn.src = "design-system/other-icons/eaglobalnav-iconsignin.svg";
-const svgRegisterIcon = document.createElement("img");
+
+const svgRegisterIcon = document.createElement("img"); //register icon //
 svgRegisterIcon.style.width = "36px";
 svgRegisterIcon.src = "design-system/other-icons/eaglobalnav-iconregister.svg";
 
@@ -59,6 +62,8 @@ divRedIconOne.style.color = "white";
 divRedIconOne.style.cursor = "pointer";
 //---------------------------- END  first red icon --------------------------------
 
+//---------------------------- DivX style -------------------------
+
 divX.style.height = "30px";
 divX.style.width = "30px";
 // divX.style.backgroundColor = "red";
@@ -68,6 +73,9 @@ divX.style.alignItems = "center";
 divX.style.position = "relative";
 divX.style.right = "60px";
 divX.style.top = "90px";
+divX.style.cursor = "pointer";
+
+//---------------------------- END DivX style -------------------------
 
 //----------------------------  second red icon -----------------------------------
 // divRedIconTwo.style.backgroundColor = "blue";
@@ -79,10 +87,6 @@ divRedIconTwo.style.color = "white";
 divRedIconTwo.style.cursor = "pointer";
 
 //---------------------------- END second red icon ---------------------------------
-
-//----------------------------  x icon ---------------------------------------------
-
-//---------------------------- END x icon ------------------------------------------
 
 //----------------------------  section of appendChilds ----------------------------
 
@@ -122,7 +126,7 @@ function expanse() {
 
 //---------------------------- AddEventListener -------------------------------------
 
-firstDivFirstIcon.addEventListener("click", expanse);
+firstDivFirstIcon.addEventListener("click", expanse); // expanse eventListener first if else //
 
 divRedIconOne.addEventListener("mouseover", () => {
   divRedIconOne.style.transform = "translateY(-6px)";
@@ -138,6 +142,18 @@ divRedIconTwo.addEventListener("mouseover", () => {
 });
 divRedIconTwo.addEventListener("mouseout", () => {
   divRedIconTwo.style.transform = "translateY(0)";
+});
+
+divX.addEventListener("click", () => {
+  // x icon eventListener second if //
+  if (headerDiv.style.minHeight === "450px") {
+    headerDiv.style.minHeight = "40px";
+    headerDiv.style.transition = "ease-in-out 0.3s";
+    divFatherRed.style.transition = "linear 0.3s";
+    divFatherRed.style.opacity = "0";
+    headerDiv.style.backgroundColor = "#101010";
+    headerDiv.removeChild(divX);
+  }
 });
 
 //----------------------------END  AddEventListener ----------------------------------
