@@ -27,7 +27,9 @@ const h3divRedFour = document.createElement("h3");
 const h3divRedFive = document.createElement("h3");
 const h3divRedSix = document.createElement("h3");
 const h3HelpTopFather = document.createElement("h3");
+const h3BottomRedFather = document.createElement("h3");
 const divX = document.createElement("div");
+
 //---------------------------- END Section of Constants -------------------------
 //Headerdiv style ------
 headerDiv.style.minHeight = "40px";
@@ -76,6 +78,14 @@ h3HelpTopFather.style.position = "absolute";
 h3HelpTopFather.style.paddingBottom = "210px";
 h3HelpTopFather.style.color = "white";
 // h3HelpTopFather.style.paddingTop = "10px";
+
+h3BottomRedFather.innerHTML =
+  'Non hai trovato ciò che cerchi? Vai su <a href ="" style="text-decoration:none; color:red">Aiuto EA</a>,<a href="" style="text-decoration:none; color:red"> Answers HQ </a>oder die <a href ="" style="text-decoration:none; color:red">Forum EA</a>.';
+h3BottomRedFather.style.fontSize = "0.9rem";
+h3BottomRedFather.style.fontWeight = "300";
+h3BottomRedFather.style.position = "absolute";
+h3BottomRedFather.style.paddingTop = "230px";
+h3BottomRedFather.style.color = "white";
 
 //---------------------------- END Style of H3 of div one and two -------------------------
 
@@ -294,6 +304,7 @@ function expanseTwo() {
     icons.appendChild(divX);
     divTestTwo.appendChild(divFatherRedTwo);
     divFatherRedTwo.appendChild(h3HelpTopFather);
+    divFatherRedTwo.appendChild(h3BottomRedFather);
     divFatherRedTwo.appendChild(divInfFatherRedTwo);
     divFatherRedTwo.appendChild(divInfTwoFatherRedTwo);
     divInfFatherRedTwo.appendChild(divRedIconThree);
