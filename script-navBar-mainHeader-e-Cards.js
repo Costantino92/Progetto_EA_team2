@@ -21,22 +21,61 @@ const divRedIconSix = document.createElement("div"); // sixth icon red
 const divTest = document.createElement("div"); //div test of the first icon
 const divTestTwo = document.createElement("div"); // div test of the second icon
 const h3divRedOne = document.createElement("h3");
-const divX = document.createElement("div");
 const h3divRedTwo = document.createElement("h3");
+const h3divRedThree = document.createElement("h3");
+const h3divRedFour = document.createElement("h3");
+const h3divRedFive = document.createElement("h3");
+const h3divRedSix = document.createElement("h3");
+const h3HelpTopFather = document.createElement("h3");
+const divX = document.createElement("div");
 //---------------------------- END Section of Constants -------------------------
 //Headerdiv style ------
 headerDiv.style.minHeight = "40px";
 //END headerDiv style ------
 //---------------------------- Style of H3 of div one and two -------------------------
-
+//---------------------------------------------
 h3divRedOne.textContent = "Accedi";
 h3divRedOne.style.fontSize = "1rem";
 h3divRedOne.style.fontWeight = "300";
 h3divRedOne.style.paddingTop = "10px";
+//---------------------------------------------
 h3divRedTwo.textContent = "Crea Account";
 h3divRedTwo.style.fontSize = "1rem";
 h3divRedTwo.style.fontWeight = "300";
 h3divRedTwo.style.paddingTop = "10px";
+//----------------------------------------------
+//---------------------------------------------
+h3divRedThree.textContent = "Verifica i dati di accesso a Origin";
+h3divRedThree.style.fontSize = "1rem";
+h3divRedThree.style.fontWeight = "300";
+h3divRedThree.style.paddingTop = "10px";
+//----------------------------------------------
+//---------------------------------------------
+h3divRedFour.textContent = "Come riscattare un codice";
+h3divRedFour.style.fontSize = "1rem";
+h3divRedFour.style.fontWeight = "300";
+h3divRedFour.style.paddingTop = "10px";
+//----------------------------------------------
+//---------------------------------------------
+h3divRedFive.textContent = "Collega Origin al mio ID PSN";
+h3divRedFive.style.fontSize = "1rem";
+h3divRedFive.style.fontWeight = "300";
+h3divRedFive.style.paddingTop = "10px";
+//----------------------------------------------
+//---------------------------------------------
+h3divRedSix.textContent = "Non riesco a giocare online";
+h3divRedSix.style.fontSize = "1rem";
+h3divRedSix.style.fontWeight = "300";
+h3divRedSix.style.paddingTop = "10px";
+//----------------------------------------------
+
+h3HelpTopFather.textContent = "Ti serve aiuto?";
+h3HelpTopFather.style.fontSize = "1.2rem";
+h3HelpTopFather.style.fontWeight = "300";
+h3HelpTopFather.style.position = "absolute";
+h3HelpTopFather.style.paddingBottom = "210px";
+h3HelpTopFather.style.color = "white";
+// h3HelpTopFather.style.paddingTop = "10px";
 
 //---------------------------- END Style of H3 of div one and two -------------------------
 
@@ -60,16 +99,20 @@ divTestTwo.style.alignItems = "center";
 //-------------------------------------------------------------------------------------------
 
 divInfFatherRedTwo.style.height = "200px";
-divInfFatherRedTwo.style.width = "200px";
-divInfFatherRedTwo.style.backgroundColor = "orange";
+divInfFatherRedTwo.style.width = "250px";
+// divInfFatherRedTwo.style.backgroundColor = "orange";
 divInfFatherRedTwo.style.display = "flex";
 divInfFatherRedTwo.style.flexDirection = "column";
 divInfFatherRedTwo.style.justifyContent = "space-evenly";
 divInfFatherRedTwo.style.alignItems = "center";
 
 divInfTwoFatherRedTwo.style.height = "200px";
-divInfTwoFatherRedTwo.style.width = "200px";
-divInfTwoFatherRedTwo.style.backgroundColor = "orange";
+divInfTwoFatherRedTwo.style.width = "250px";
+// divInfTwoFatherRedTwo.style.backgroundColor = "orange";
+divInfTwoFatherRedTwo.style.display = "flex";
+divInfTwoFatherRedTwo.style.flexDirection = "column";
+divInfTwoFatherRedTwo.style.justifyContent = "space-evenly";
+divInfTwoFatherRedTwo.style.alignItems = "center";
 
 //--------------------------------------------------------------------------------------------
 
@@ -100,9 +143,11 @@ iconOriginCode.style.width = "36px";
 
 const originWarning = document.createElement("img"); //Warning icon //
 originWarning.src = "design-system/other-icons/eaglobalnav-iconalert.svg";
+originWarning.style.width = "36px";
 
 const iconLinkOrigin = document.createElement("img"); // Links icon //
 iconLinkOrigin.src = "design-system/other-icons/eaglobalnav-iconlink.svg";
+iconLinkOrigin.style.width = "36px";
 
 //---------------------------- END Working on img svg ----------------------------
 
@@ -118,8 +163,8 @@ divFatherRedTwo.style.display = "flex";
 divFatherRedTwo.style.justifyContent = "space-evenly";
 divFatherRedTwo.style.alignItems = "center";
 divFatherRedTwo.style.height = "250px";
-divFatherRedTwo.style.backgroundColor = "yellow";
-divFatherRedTwo.style.width = "600px";
+// divFatherRedTwo.style.backgroundColor = "yellow";
+divFatherRedTwo.style.width = "650px";
 divFatherRedTwo.style.opacity = "1";
 
 //----------------------------  first red icon -----------------------------------
@@ -164,6 +209,28 @@ divRedIconFour.style.cursor = "pointer";
 
 //---------------------------- END Fourth red icon ---------------------------------
 
+//----------------------------  Fifth red icon -----------------------------------
+
+divRedIconFive.style.position = "relative";
+divRedIconFive.style.display = "flex";
+divRedIconFive.style.flexDirection = "column";
+divRedIconFive.style.alignItems = "center";
+divRedIconFive.style.color = "white";
+divRedIconFive.style.cursor = "pointer";
+
+//---------------------------- END Fifth red icon ---------------------------------
+
+//---------------------------- Sixth red icon -----------------------------------
+
+divRedIconSix.style.position = "relative";
+divRedIconSix.style.display = "flex";
+divRedIconSix.style.flexDirection = "column";
+divRedIconSix.style.alignItems = "center";
+divRedIconSix.style.color = "white";
+divRedIconSix.style.cursor = "pointer";
+
+//---------------------------- END Sixth red icon ---------------------------------
+
 //---------------------------- DivX style -------------------------
 
 divX.style.height = "30px";
@@ -185,7 +252,8 @@ divRedIconTwo.appendChild(svgRegisterIcon);
 divRedIconTwo.appendChild(h3divRedTwo);
 divRedIconThree.appendChild(verifyDataIconOrigin);
 divRedIconFour.appendChild(iconOriginCode);
-// divRedIconThree.appendChild(h3divRedTwo);
+divRedIconFive.appendChild(iconLinkOrigin);
+divRedIconSix.appendChild(originWarning);
 divX.appendChild(svgXicon);
 
 //---------------------------- END section of appendChilds --------------------------
@@ -225,10 +293,17 @@ function expanseTwo() {
     headerDiv.appendChild(divTestTwo);
     icons.appendChild(divX);
     divTestTwo.appendChild(divFatherRedTwo);
+    divFatherRedTwo.appendChild(h3HelpTopFather);
     divFatherRedTwo.appendChild(divInfFatherRedTwo);
     divFatherRedTwo.appendChild(divInfTwoFatherRedTwo);
     divInfFatherRedTwo.appendChild(divRedIconThree);
     divInfFatherRedTwo.appendChild(divRedIconFour);
+    divRedIconThree.appendChild(h3divRedThree);
+    divRedIconFour.appendChild(h3divRedFour);
+    divInfTwoFatherRedTwo.appendChild(divRedIconFive);
+    divInfTwoFatherRedTwo.appendChild(divRedIconSix);
+    divRedIconFive.appendChild(h3divRedFive);
+    divRedIconSix.appendChild(h3divRedSix);
     // divFatherRedTwo.appendChild(divRedIconTwo);
     icons.style.zIndex = "3";
     divFatherRedTwo.style.opacity = "1";
@@ -264,6 +339,38 @@ divRedIconTwo.addEventListener("mouseover", () => {
 });
 divRedIconTwo.addEventListener("mouseout", () => {
   divRedIconTwo.style.transform = "translateY(0)";
+});
+
+divRedIconThree.addEventListener("mouseover", () => {
+  divRedIconThree.style.transform = "translateY(-6px)";
+  divRedIconThree.style.transition = "all 150ms ease-out";
+});
+divRedIconThree.addEventListener("mouseout", () => {
+  divRedIconThree.style.transform = "translateY(0)";
+});
+
+divRedIconFour.addEventListener("mouseover", () => {
+  divRedIconFour.style.transform = "translateY(-6px)";
+  divRedIconFour.style.transition = "all 150ms ease-out";
+});
+divRedIconFour.addEventListener("mouseout", () => {
+  divRedIconFour.style.transform = "translateY(0)";
+});
+
+divRedIconFive.addEventListener("mouseover", () => {
+  divRedIconFive.style.transform = "translateY(-6px)";
+  divRedIconFive.style.transition = "all 150ms ease-out";
+});
+divRedIconFive.addEventListener("mouseout", () => {
+  divRedIconFive.style.transform = "translateY(0)";
+});
+
+divRedIconSix.addEventListener("mouseover", () => {
+  divRedIconSix.style.transform = "translateY(-6px)";
+  divRedIconSix.style.transition = "all 150ms ease-out";
+});
+divRedIconSix.addEventListener("mouseout", () => {
+  divRedIconSix.style.transform = "translateY(0)";
 });
 //---------------------------- END AddEventListener of the first icon -------------------------------------
 //---------------------------- AddEventListener of the second icon -------------------------------------
