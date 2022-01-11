@@ -6,26 +6,56 @@
 let childrenOfDivLinks = document.querySelector(".divLinks").children;
 
 for (let i = 0; i < childrenOfDivLinks.length; i++) {
+  // debugger;
+  let curtain = document.createElement("div");
+  curtain.style.position = "absolute";
+  if (i % 2) {
+    curtain.style.bottom = "-300px";
+  } else {
+    curtain.style.top = "50px";
+  }
+  curtain.style.left = "-25px";
+  curtain.style.height = "0";
+  curtain.style.borderRadius = "4px";
+  curtain.style.width = "250px";
+  curtain.style.backgroundColor = "red";
+  curtain.style.zIndex = "3";
+  curtain.style.opacity = "0";
+  curtain.style.transition = "ease .5s";
+  if (childrenOfDivLinks[i].children.length == 1) {
+    childrenOfDivLinks[i].appendChild(curtain);
+  }
   childrenOfDivLinks[i].addEventListener("mouseover", () => {
-    let imgs = childrenOfDivLinks[i].lastChild.previousSibling;
+    curtain.style.opacity = "1";
+    curtain.style.height = "300px";
+
+    let imgs = childrenOfDivLinks[i].lastElementChild.previousElementSibling;
+    console.log(imgs);
 
     imgs.style.transform = "rotateX(180deg)";
     imgs.style.transition = "linear 0.4s";
     imgs.style.fill = "#ff6161";
     childrenOfDivLinks[i].style.cursor = "default";
     childrenOfDivLinks[i].style.color = "#ff6161";
+    childrenOfDivLinks[i].style.position = "relative";
   });
 
   childrenOfDivLinks[i].addEventListener("mouseout", () => {
-    let imgs = childrenOfDivLinks[i].lastChild.previousSibling;
+    let imgs = childrenOfDivLinks[i].lastChild.previousElementSibling;
 
     imgs.style.transform = "rotateX(0deg)";
     imgs.style.transition = "linear 0.4s";
     childrenOfDivLinks[i].style.color = "black";
     imgs.style.fill = "unset";
+    curtain.style.height = "0";
+    curtain.style.transition = "ease .5s";
+    curtain.style.opacity = "0";
   });
 }
 
+//---------------------------- NavBar Curtain -----------------------------
+
+//---------------------------- End NavBar Curtain-----------------------------
 //---------------------------- End Arrows NavBar -----------------------------
 
 //---------------------------- Cards Animation -------------------------------
