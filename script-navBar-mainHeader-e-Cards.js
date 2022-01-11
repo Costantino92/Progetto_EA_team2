@@ -1,6 +1,6 @@
-//---------------------------- NavBar Animation -------------------------------
+//---------------------------- NavBar Animation -----------------------
 
-//---------------------------- Section of Constants ---------------------------
+//---------------------------- Section of Constants -------------------
 const body = document.querySelector("body");
 const firstDivFirstIcon = document.querySelector(".icons").firstElementChild; // log in icon
 const secondDivFirstIcon = firstDivFirstIcon.nextElementSibling; //question icon
@@ -9,7 +9,7 @@ const icons = document.querySelector(".icons");
 const divFatherRed = document.createElement("div"); //FIRST FATHER  div for first icon " Do "
 const divRedIconOne = document.createElement("div"); // first icon red
 const divRedIconTwo = document.createElement("div"); //second icon red
-//--------------------------------------------------------------------------------//
+//-----------------------------------------------------------------------
 const divFatherRedTwo = document.createElement("div"); //SECOND FATHER div for second icon " ? "
 const divInfFatherRedTwo = document.createElement("div"); // left container of icon three and four
 const divInfTwoFatherRedTwo = document.createElement("div"); //right container of icon five and six
@@ -17,7 +17,7 @@ const divRedIconThree = document.createElement("div"); //third icon red
 const divRedIconFour = document.createElement("div"); //fourth icon red
 const divRedIconFive = document.createElement("div"); //fifth icon red
 const divRedIconSix = document.createElement("div"); // sixth icon red
-//--------------------------------------------------------------------------------//
+//------------------------------------------------------------------------
 const divTest = document.createElement("div"); //div test of the first icon
 const divTestTwo = document.createElement("div"); // div test of the second icon
 const h3divRedOne = document.createElement("h3");
@@ -30,46 +30,46 @@ const h3HelpTopFather = document.createElement("h3");
 const h3BottomRedFather = document.createElement("h3");
 const divX = document.createElement("div");
 
-//---------------------------- END Section of Constants -------------------------
+//---------------------------- END Section of Constants -------------------
 //Headerdiv style ------
 headerDiv.style.minHeight = "40px";
 //END headerDiv style ------
-//---------------------------- Style of H3 of div one and two -------------------------
-//---------------------------------------------
+//---------------------------- Style of H3 of div one and two --------------
+//--------------------------------------------------------------------------
 h3divRedOne.textContent = "Accedi";
 h3divRedOne.style.fontSize = "1rem";
 h3divRedOne.style.fontWeight = "300";
 h3divRedOne.style.paddingTop = "10px";
-//---------------------------------------------
+//--------------------------------------------------------------------------
 h3divRedTwo.textContent = "Crea Account";
 h3divRedTwo.style.fontSize = "1rem";
 h3divRedTwo.style.fontWeight = "300";
 h3divRedTwo.style.paddingTop = "10px";
-//----------------------------------------------
-//---------------------------------------------
+//--------------------------------------------------------------------------
+//--------------------------------------------------------------------------
 h3divRedThree.textContent = "Verifica i dati di accesso a Origin";
 h3divRedThree.style.fontSize = "1rem";
 h3divRedThree.style.fontWeight = "300";
 h3divRedThree.style.paddingTop = "10px";
-//----------------------------------------------
-//---------------------------------------------
+//--------------------------------------------------------------------------
+//--------------------------------------------------------------------------
 h3divRedFour.textContent = "Come riscattare un codice";
 h3divRedFour.style.fontSize = "1rem";
 h3divRedFour.style.fontWeight = "300";
 h3divRedFour.style.paddingTop = "10px";
-//----------------------------------------------
-//---------------------------------------------
+
+//---------------------------------------------------------------------------
 h3divRedFive.textContent = "Collega Origin al mio ID PSN";
 h3divRedFive.style.fontSize = "1rem";
 h3divRedFive.style.fontWeight = "300";
 h3divRedFive.style.paddingTop = "10px";
-//----------------------------------------------
-//---------------------------------------------
+//---------------------------------------------------------------------------
+
 h3divRedSix.textContent = "Non riesco a giocare online";
 h3divRedSix.style.fontSize = "1rem";
 h3divRedSix.style.fontWeight = "300";
 h3divRedSix.style.paddingTop = "10px";
-//----------------------------------------------
+//----------------------------------------------------------------------------
 
 h3HelpTopFather.textContent = "Ti serve aiuto?";
 h3HelpTopFather.style.fontSize = "1.2rem";
@@ -77,7 +77,7 @@ h3HelpTopFather.style.fontWeight = "300";
 h3HelpTopFather.style.position = "absolute";
 h3HelpTopFather.style.paddingBottom = "210px";
 h3HelpTopFather.style.color = "white";
-// h3HelpTopFather.style.paddingTop = "10px";
+h3HelpTopFather.style.paddingTop = "10px";
 
 h3BottomRedFather.innerHTML =
   'Non hai trovato ciò che cerchi? Vai su <a href ="" style="text-decoration:none; color:red">Aiuto EA</a>,<a href="" style="text-decoration:none; color:red"> Answers HQ </a>oder die <a href ="" style="text-decoration:none; color:red">Forum EA</a>.';
@@ -87,7 +87,7 @@ h3BottomRedFather.style.position = "absolute";
 h3BottomRedFather.style.paddingTop = "230px";
 h3BottomRedFather.style.color = "white";
 
-//---------------------------- END Style of H3 of div one and two -------------------------
+//--------------------- END Style of H3 of div one and two ---------------------
 
 divTest.style.position = "absolute";
 divTest.style.top = "0";
@@ -106,7 +106,7 @@ divTestTwo.style.bottom = "0";
 divTestTwo.style.display = "flex";
 divTestTwo.style.justifyContent = "center";
 divTestTwo.style.alignItems = "center";
-//-------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
 divInfFatherRedTwo.style.height = "200px";
 divInfFatherRedTwo.style.width = "250px";
@@ -124,14 +124,14 @@ divInfTwoFatherRedTwo.style.flexDirection = "column";
 divInfTwoFatherRedTwo.style.justifyContent = "space-evenly";
 divInfTwoFatherRedTwo.style.alignItems = "center";
 
-//--------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
-//---------------------------- Working on img svg -------------------------------
+//---------------------------- Working on img svg ------------------------------
 
 const svgXicon = document.createElement("img"); // x icon//
 svgXicon.src = "design-system/other-icons/x.svg";
 
-//---------------------------- First icons of first svg FIRST DIV -------------------------------
+//---------------------------- First icons of first svg FIRST DIV --------------
 const svgSignIn = document.createElement("img"); //sign in icon //
 svgSignIn.src = "design-system/other-icons/eaglobalnav-iconsignin.svg";
 svgSignIn.style.width = "36px";
@@ -140,7 +140,7 @@ const svgRegisterIcon = document.createElement("img"); //register icon //
 svgRegisterIcon.src = "design-system/other-icons/eaglobalnav-iconregister.svg";
 svgRegisterIcon.style.width = "36px";
 
-//---------------------------- END First icons of first svg -------------------------------
+//---------------------------- END First icons of first svg ---------------------
 
 const verifyDataIconOrigin = document.createElement("img"); // Origin icon //
 verifyDataIconOrigin.src =
@@ -196,7 +196,7 @@ divRedIconTwo.style.alignItems = "center";
 divRedIconTwo.style.color = "white";
 divRedIconTwo.style.cursor = "pointer";
 
-//---------------------------- END second red icon ---------------------------------
+//---------------------------- END second red icon -------------------------------
 
 //----------------------------  Third red icon -----------------------------------
 
@@ -217,7 +217,7 @@ divRedIconFour.style.alignItems = "center";
 divRedIconFour.style.color = "white";
 divRedIconFour.style.cursor = "pointer";
 
-//---------------------------- END Fourth red icon ---------------------------------
+//---------------------------- END Fourth red icon -------------------------------
 
 //----------------------------  Fifth red icon -----------------------------------
 
@@ -228,7 +228,7 @@ divRedIconFive.style.alignItems = "center";
 divRedIconFive.style.color = "white";
 divRedIconFive.style.cursor = "pointer";
 
-//---------------------------- END Fifth red icon ---------------------------------
+//---------------------------- END Fifth red icon -------------------------------
 
 //---------------------------- Sixth red icon -----------------------------------
 
@@ -241,7 +241,7 @@ divRedIconSix.style.cursor = "pointer";
 
 //---------------------------- END Sixth red icon ---------------------------------
 
-//---------------------------- DivX style -------------------------
+//---------------------------- DivX style -----------------------------------------
 
 divX.style.height = "30px";
 divX.style.display = "flex";
@@ -252,7 +252,7 @@ divX.style.position = "absolute";
 divX.style.top = "70px";
 divX.style.right = "40px";
 
-//---------------------------- END DivX style -------------------------
+//---------------------------- END DivX style --------------------------------------
 
 //----------------------------  section of appendChilds ----------------------------
 
@@ -291,6 +291,7 @@ function expanse() {
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
+    headerDiv.removeChild(divTest);
   }
 }
 
@@ -315,7 +316,6 @@ function expanseTwo() {
     divInfTwoFatherRedTwo.appendChild(divRedIconSix);
     divRedIconFive.appendChild(h3divRedFive);
     divRedIconSix.appendChild(h3divRedSix);
-    // divFatherRedTwo.appendChild(divRedIconTwo);
     icons.style.zIndex = "3";
     divFatherRedTwo.style.opacity = "1";
     body.style.overflowY = "hidden";
@@ -327,12 +327,13 @@ function expanseTwo() {
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
+    headerDiv.removeChild(divTestTwo);
   }
 }
 
 //---------------------------- AddEventListener -------------------------------------
 
-//---------------------------- AddEventListener of the first icon -------------------------------------
+//---------------------------- AddEventListener of the first icon -------------------
 
 firstDivFirstIcon.addEventListener("click", expanse); // expanse eventListener first if else //
 
@@ -383,14 +384,14 @@ divRedIconSix.addEventListener("mouseover", () => {
 divRedIconSix.addEventListener("mouseout", () => {
   divRedIconSix.style.transform = "translateY(0)";
 });
-//---------------------------- END AddEventListener of the first icon -------------------------------------
-//---------------------------- AddEventListener of the second icon -------------------------------------
+//---------------------------- END AddEventListener of the first icon ----------------
+//---------------------------- AddEventListener of the second icon -------------------
 
 secondDivFirstIcon.addEventListener("click", expanseTwo); // expanse eventListener first if else //
 
-//---------------------------- END AddEventListener of the second icon -------------------------------------
+//---------------------------- END AddEventListener of the second icon ---------------
 
-//---------------------------- AddEventListener of the X icon -------------------------------------
+//---------------------------- AddEventListener of the X icon ------------------------
 
 divX.addEventListener("click", () => {
   // x icon eventListener second if //
@@ -399,12 +400,17 @@ divX.addEventListener("click", () => {
     headerDiv.style.transition = "ease-in-out 0.3s";
     divFatherRed.style.transition = "linear 0.3s";
     divFatherRed.style.opacity = "0";
+    divFatherRedTwo.style.transition = "linear 0.3s";
+    divFatherRedTwo.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
+    // headerDiv.removeChild(divTest);
+    // headerDiv.removeChild(divTestTwo);
+    // headerDiv.style.zIndex = "-2";
   }
 });
-//----------------------------END AddEventListener of the X icon -------------------------------------
+//----------------------------END AddEventListener of the X icon ---------------------
 
 //----------------------------END  AddEventListener ----------------------------------
 
