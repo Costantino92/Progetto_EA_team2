@@ -177,7 +177,7 @@ function expanse() {
     icons.removeChild(divX);
     setTimeout(() => {
       headerDiv.removeChild(divTest);
-    }, 1000);
+    }, 100);
   }
 }
 
@@ -215,7 +215,7 @@ function expanseTwo() {
     icons.removeChild(divX);
     setTimeout(() => {
       headerDiv.removeChild(divTestTwo);
-    }, 1000);
+    }, 100);
   }
 }
 
