@@ -37,92 +37,49 @@ headerDiv.style.minHeight = "40px";
 //---------------------------- Style of H3 of div one and two --------------
 //--------------------------------------------------------------------------
 h3divRedOne.textContent = "Accedi";
-h3divRedOne.style.fontSize = "1rem";
-h3divRedOne.style.fontWeight = "300";
-h3divRedOne.style.paddingTop = "10px";
+h3divRedOne.classList.add("h3RedDiv");
+
 //--------------------------------------------------------------------------
 h3divRedTwo.textContent = "Crea Account";
-h3divRedTwo.style.fontSize = "1rem";
-h3divRedTwo.style.fontWeight = "300";
-h3divRedTwo.style.paddingTop = "10px";
+h3divRedTwo.classList.add("h3RedDiv");
+
 //--------------------------------------------------------------------------
 //--------------------------------------------------------------------------
 h3divRedThree.textContent = "Verifica i dati di accesso a Origin";
-h3divRedThree.style.fontSize = "1rem";
-h3divRedThree.style.fontWeight = "300";
-h3divRedThree.style.paddingTop = "10px";
+h3divRedThree.classList.add("h3RedDiv");
+
 //--------------------------------------------------------------------------
 //--------------------------------------------------------------------------
 h3divRedFour.textContent = "Come riscattare un codice";
-h3divRedFour.style.fontSize = "1rem";
-h3divRedFour.style.fontWeight = "300";
-h3divRedFour.style.paddingTop = "10px";
+h3divRedFour.classList.add("h3RedDiv");
 
 //---------------------------------------------------------------------------
 h3divRedFive.textContent = "Collega Origin al mio ID PSN";
-h3divRedFive.style.fontSize = "1rem";
-h3divRedFive.style.fontWeight = "300";
-h3divRedFive.style.paddingTop = "10px";
+h3divRedFive.classList.add("h3RedDiv");
+
 //---------------------------------------------------------------------------
 
 h3divRedSix.textContent = "Non riesco a giocare online";
-h3divRedSix.style.fontSize = "1rem";
-h3divRedSix.style.fontWeight = "300";
-h3divRedSix.style.paddingTop = "10px";
+h3divRedSix.classList.add("h3RedDiv");
+
 //----------------------------------------------------------------------------
 
 h3HelpTopFather.textContent = "Ti serve aiuto?";
-h3HelpTopFather.style.fontSize = "1.2rem";
-h3HelpTopFather.style.fontWeight = "300";
-h3HelpTopFather.style.position = "absolute";
-h3HelpTopFather.style.paddingBottom = "210px";
-h3HelpTopFather.style.color = "white";
-h3HelpTopFather.style.paddingTop = "10px";
+h3HelpTopFather.classList.add("h3HelpTop");
 
 h3BottomRedFather.innerHTML =
   'Non hai trovato ciò che cerchi? Vai su <a href ="" style="text-decoration:none; color:red">Aiuto EA</a>,<a href="" style="text-decoration:none; color:red"> Answers HQ </a>oder die <a href ="" style="text-decoration:none; color:red">Forum EA</a>.';
-h3BottomRedFather.style.fontSize = "0.9rem";
-h3BottomRedFather.style.fontWeight = "300";
-h3BottomRedFather.style.position = "absolute";
-h3BottomRedFather.style.paddingTop = "230px";
-h3BottomRedFather.style.color = "white";
+h3BottomRedFather.classList.add("h3BottomFather");
 
 //--------------------- END Style of H3 of div one and two ---------------------
 
-divTest.style.position = "absolute";
-divTest.style.top = "0";
-divTest.style.left = "0";
-divTest.style.right = "0";
-divTest.style.bottom = "0";
-divTest.style.display = "flex";
-divTest.style.justifyContent = "center";
-divTest.style.alignItems = "center";
+divTest.classList.add("divTestStyle");
 
-divTestTwo.style.position = "absolute";
-divTestTwo.style.top = "0";
-divTestTwo.style.left = "0";
-divTestTwo.style.right = "0";
-divTestTwo.style.bottom = "0";
-divTestTwo.style.display = "flex";
-divTestTwo.style.justifyContent = "center";
-divTestTwo.style.alignItems = "center";
+divTestTwo.classList.add("divTestStyle");
 //------------------------------------------------------------------------------
 
-divInfFatherRedTwo.style.height = "200px";
-divInfFatherRedTwo.style.width = "250px";
-// divInfFatherRedTwo.style.backgroundColor = "orange";
-divInfFatherRedTwo.style.display = "flex";
-divInfFatherRedTwo.style.flexDirection = "column";
-divInfFatherRedTwo.style.justifyContent = "space-evenly";
-divInfFatherRedTwo.style.alignItems = "center";
-
-divInfTwoFatherRedTwo.style.height = "200px";
-divInfTwoFatherRedTwo.style.width = "250px";
-// divInfTwoFatherRedTwo.style.backgroundColor = "orange";
-divInfTwoFatherRedTwo.style.display = "flex";
-divInfTwoFatherRedTwo.style.flexDirection = "column";
-divInfTwoFatherRedTwo.style.justifyContent = "space-evenly";
-divInfTwoFatherRedTwo.style.alignItems = "center";
+divInfFatherRedTwo.classList.add("divInFathersStyle");
+divInfTwoFatherRedTwo.classList.add("divInFathersStyle");
 
 //------------------------------------------------------------------------------
 
@@ -161,98 +118,25 @@ iconLinkOrigin.style.width = "36px";
 
 //---------------------------- END Working on img svg ----------------------------
 
-divFatherRed.style.display = "flex";
-divFatherRed.style.justifyContent = "space-between";
-divFatherRed.style.alignItems = "center";
-divFatherRed.style.height = "200px";
-// divFatherRed.style.backgroundColor = "yellow";
-divFatherRed.style.width = "360px";
-divFatherRed.style.opacity = "1";
+divFatherRed.classList.add("divFatherRedStyle");
 
-divFatherRedTwo.style.display = "flex";
-divFatherRedTwo.style.justifyContent = "space-evenly";
-divFatherRedTwo.style.alignItems = "center";
-divFatherRedTwo.style.height = "250px";
-// divFatherRedTwo.style.backgroundColor = "yellow";
-divFatherRedTwo.style.width = "650px";
-divFatherRedTwo.style.opacity = "1";
+divFatherRedTwo.classList.add("divFatherTwoRedStyle");
 
-//----------------------------  first red icon -----------------------------------
-// divRedIconOne.style.backgroundColor = "blue";
-divRedIconOne.style.position = "relative";
-divRedIconOne.style.display = "flex";
-divRedIconOne.style.alignItems = "center";
-divRedIconOne.style.flexDirection = "column";
-divRedIconOne.style.color = "white";
-divRedIconOne.style.cursor = "pointer";
-//---------------------------- END  first red icon --------------------------------
+divRedIconOne.classList.add("iconsStyleRed");
 
-//----------------------------  second red icon -----------------------------------
+divRedIconTwo.classList.add("iconsStyleRed");
 
-divRedIconTwo.style.position = "relative";
-divRedIconTwo.style.display = "flex";
-divRedIconTwo.style.flexDirection = "column";
-divRedIconTwo.style.alignItems = "center";
-divRedIconTwo.style.color = "white";
-divRedIconTwo.style.cursor = "pointer";
+divRedIconThree.classList.add("iconsStyleRed");
 
-//---------------------------- END second red icon -------------------------------
+divRedIconFour.classList.add("iconsStyleRed");
 
-//----------------------------  Third red icon -----------------------------------
+divRedIconFive.classList.add("iconsStyleRed");
 
-divRedIconThree.style.position = "relative";
-divRedIconThree.style.display = "flex";
-divRedIconThree.style.flexDirection = "column";
-divRedIconThree.style.alignItems = "center";
-divRedIconThree.style.color = "white";
-divRedIconThree.style.cursor = "pointer";
+divRedIconSix.classList.add("iconsStyleRed");
 
-//---------------------------- END Third red icon ---------------------------------
-//----------------------------  Fourth red icon -----------------------------------
+divX.classList.add("divXstyle");
 
-divRedIconFour.style.position = "relative";
-divRedIconFour.style.display = "flex";
-divRedIconFour.style.flexDirection = "column";
-divRedIconFour.style.alignItems = "center";
-divRedIconFour.style.color = "white";
-divRedIconFour.style.cursor = "pointer";
-
-//---------------------------- END Fourth red icon -------------------------------
-
-//----------------------------  Fifth red icon -----------------------------------
-
-divRedIconFive.style.position = "relative";
-divRedIconFive.style.display = "flex";
-divRedIconFive.style.flexDirection = "column";
-divRedIconFive.style.alignItems = "center";
-divRedIconFive.style.color = "white";
-divRedIconFive.style.cursor = "pointer";
-
-//---------------------------- END Fifth red icon -------------------------------
-
-//---------------------------- Sixth red icon -----------------------------------
-
-divRedIconSix.style.position = "relative";
-divRedIconSix.style.display = "flex";
-divRedIconSix.style.flexDirection = "column";
-divRedIconSix.style.alignItems = "center";
-divRedIconSix.style.color = "white";
-divRedIconSix.style.cursor = "pointer";
-
-//---------------------------- END Sixth red icon ---------------------------------
-
-//---------------------------- DivX style -----------------------------------------
-
-divX.style.height = "30px";
-divX.style.display = "flex";
-divX.style.justifyContent = "center";
-divX.style.alignItems = "center";
-divX.style.cursor = "pointer";
-divX.style.position = "absolute";
-divX.style.top = "70px";
-divX.style.right = "40px";
-
-//---------------------------- END DivX style --------------------------------------
+//
 
 //----------------------------  section of appendChilds ----------------------------
 
@@ -291,7 +175,9 @@ function expanse() {
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
-    headerDiv.removeChild(divTest);
+    setTimeout(() => {
+      headerDiv.removeChild(divTest);
+    }, 1000);
   }
 }
 
@@ -327,7 +213,9 @@ function expanseTwo() {
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
-    headerDiv.removeChild(divTestTwo);
+    setTimeout(() => {
+      headerDiv.removeChild(divTestTwo);
+    }, 1000);
   }
 }
 
