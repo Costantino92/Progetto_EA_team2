@@ -158,26 +158,30 @@ function expanse() {
     headerDiv.style.minHeight = "450px";
     headerDiv.style.alignItems = "unset";
     icons.style.marginTop = "10px";
-    headerDiv.style.transition = "ease-in-out 0.3s";
+    headerDiv.style.transition = "ease-in-out 0.4s";
     headerDiv.appendChild(divTest);
     icons.appendChild(divX);
     divTest.appendChild(divFatherRed);
     divFatherRed.appendChild(divRedIconOne);
     divFatherRed.appendChild(divRedIconTwo);
     icons.style.zIndex = "3";
+    // headerDiv.style.zIndex = "3";
     divFatherRed.style.opacity = "1";
     body.style.overflowY = "hidden";
   } else {
     headerDiv.style.minHeight = "40px";
-    headerDiv.style.transition = "ease-in-out 0.3s";
-    divFatherRed.style.transition = "linear 0.3s";
+    headerDiv.style.transition = "ease-in-out 0.4s";
+    divFatherRed.style.transition = "linear 0.4s";
     divFatherRed.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
+    // headerDiv.style.zIndex = "0";
+    // icons.style.zIndex = "3";
     setTimeout(() => {
       headerDiv.removeChild(divTest);
-    }, 100);
+      headerDiv.removeChild(divTestTwo);
+    }, 300);
   }
 }
 
@@ -186,7 +190,7 @@ function expanseTwo() {
     headerDiv.style.minHeight = "450px";
     headerDiv.style.alignItems = "unset";
     icons.style.marginTop = "10px";
-    headerDiv.style.transition = "ease-in-out 0.3s";
+    headerDiv.style.transition = "ease-in-out 0.4s";
     headerDiv.appendChild(divTestTwo);
     icons.appendChild(divX);
     divTestTwo.appendChild(divFatherRedTwo);
@@ -207,15 +211,16 @@ function expanseTwo() {
     body.style.overflowY = "hidden";
   } else {
     headerDiv.style.minHeight = "40px";
-    headerDiv.style.transition = "ease-in-out 0.3s";
-    divFatherRedTwo.style.transition = "linear 0.3s";
+    headerDiv.style.transition = "ease-in-out 0.4s";
+    divFatherRedTwo.style.transition = "linear 0.4s";
     divFatherRedTwo.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
     setTimeout(() => {
       headerDiv.removeChild(divTestTwo);
-    }, 100);
+      headerDiv.removeChild(divTest);
+    }, 300);
   }
 }
 
@@ -293,9 +298,12 @@ divX.addEventListener("click", () => {
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
-    // headerDiv.removeChild(divTest);
-    // headerDiv.removeChild(divTestTwo);
-    // headerDiv.style.zIndex = "-2";
+    setTimeout(() => {
+      headerDiv.removeChild(divTestTwo);
+    }, 300);
+    setTimeout(() => {
+      headerDiv.removeChild(divTest);
+    }, 300);
   }
 });
 //----------------------------END AddEventListener of the X icon ---------------------
