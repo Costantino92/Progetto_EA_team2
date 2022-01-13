@@ -5,6 +5,8 @@ const body = document.querySelector("body");
 const firstDivFirstIcon = document.querySelector(".icons").firstElementChild; // log in icon
 const secondDivFirstIcon = firstDivFirstIcon.nextElementSibling; //question icon
 const headerDiv = document.querySelector(".headerDiv");
+const NavBar = document.querySelector(".navBar");
+console.log(NavBar);
 const icons = document.querySelector(".icons");
 const divFatherRed = document.createElement("div"); //FIRST FATHER  div for first icon " Do "
 const divRedIconOne = document.createElement("div"); // first icon red
@@ -176,8 +178,6 @@ function expanse() {
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
     icons.removeChild(divX);
-    // headerDiv.style.zIndex = "0";
-    // icons.style.zIndex = "3";
     setTimeout(() => {
       headerDiv.removeChild(divTest);
       headerDiv.removeChild(divTestTwo);
@@ -223,6 +223,15 @@ function expanseTwo() {
     }, 300);
   }
 }
+
+function scrolling() {
+  NavBar.style.width = "100%";
+  NavBar.style.backgroundColor = "white";
+  NavBar.style.position = "fixed";
+  NavBar.style.top = "0";
+}
+
+NavBar.addEventListener("scroll", scrolling);
 
 //---------------------------- AddEventListener -------------------------------------
 
