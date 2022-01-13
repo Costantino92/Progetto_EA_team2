@@ -4,33 +4,148 @@
 
 //---------------------------- Arrows NavBar -------------------------------
 let childrenOfDivLinks = document.querySelector(".divLinks").children;
-
+let giochiList = [
+  "ESPLORA I GIOCHI",
+  "Ultimi giochi",
+  "Prossimamente",
+  "EA SPORTS",
+  "Giochi gratuiti",
+  "Libreria dei giochi",
+  "PIATTAFORME",
+  "PC",
+  "Playstation 5",
+  "Xbox Series X",
+  "Nintendo Switch",
+  "Cellulari",
+];
+let altreEsperienzeList = [
+  "EA Play",
+  "Origin",
+  "Competizioni videoludiche",
+  "Diretta di EA Play",
+];
+let informazioniList = [
+  "Societa",
+  "EA Studi",
+  "La nostra tecnologia",
+  "EA Partners",
+  "Notizie",
+  "Inside EA",
+];
+let impegniList = [
+  "Gioco positivo",
+  "Diversità e inclusione",
+  "Sensibilizzazione della comunità",
+  "Persone e cultura",
+  "Ambiente",
+];
+let risorseList = [
+  "Aiuto",
+  "Forum",
+  "Lavora con noi",
+  "Filtro famiglia",
+  "Accessibilita",
+  "Stampa",
+  "Investitori",
+  "Test di gioco",
+];
+let listsNavBar = [
+  giochiList,
+  altreEsperienzeList,
+  informazioniList,
+  impegniList,
+  risorseList,
+];
 for (let i = 0; i < childrenOfDivLinks.length; i++) {
   // debugger;
   let curtain = document.createElement("div");
+  curtain.style.color = "black";
   curtain.style.position = "absolute";
-  if (i % 2) {
-    curtain.style.bottom = "-300px";
+  if (i % 2 == 0) {
+    curtain.style.bottom = "-310px";
   } else {
-    curtain.style.top = "50px";
+    curtain.style.top = "60px";
   }
   curtain.style.left = "-25px";
   curtain.style.height = "0";
   curtain.style.borderRadius = "4px";
-  curtain.style.width = "250px";
-  curtain.style.backgroundColor = "red";
+  curtain.style.width = "min-content";
+  curtain.style.backgroundColor = "white";
   curtain.style.zIndex = "3";
   curtain.style.opacity = "0";
   curtain.style.transition = "ease .5s";
+  curtain.style.display = "flex";
+  curtain.style.flexDirection = "column";
   if (childrenOfDivLinks[i].children.length == 1) {
     childrenOfDivLinks[i].appendChild(curtain);
   }
   childrenOfDivLinks[i].addEventListener("mouseover", () => {
     curtain.style.opacity = "1";
     curtain.style.height = "300px";
+    // console.log([...childrenOfDivLinks].indexOf(childrenOfDivLinks[i]));
+    if ([...childrenOfDivLinks].indexOf(childrenOfDivLinks[i]) == 0) {
+      // debugger;
+      if (curtain.children.length < 1) {
+        curtain.style.flexDirection = "row";
+        // curtain.style.gap = "50px";
+        let divCurtainContentLeft = document.createElement("div");
+        divCurtainContentLeft.height = "max-content";
+        divCurtainContentLeft.width = "max-content";
+        divCurtainContentLeft.marginLeft = "100px";
+        let divCurtainContentRight = document.createElement("div");
+        divCurtainContentRight.height = "max-content";
+        divCurtainContentRight.width = "max-content";
+
+        listsNavBar[i].forEach((el) => {
+          if (listsNavBar[i].indexOf(el) < 6) {
+            let divContent = document.createElement("div");
+            divContent.textContent = el;
+
+            divContent.onmouseover = () => {
+              divContent.style.color = "red";
+              divContent.onmouseout = () => {
+                divContent.style.color = "black";
+              };
+            };
+            divContent.marginLeft = "50px";
+            divCurtainContentLeft.appendChild(divContent);
+            curtain.appendChild(divCurtainContentLeft);
+            divCurtainContentLeft.style.display = "flex";
+            divCurtainContentLeft.style.flexDirection = "column";
+          } else {
+            let divContent = document.createElement("div");
+            divContent.textContent = el;
+            divContent.onmouseover = () => {
+              divContent.style.color = "red";
+              divContent.onmouseout = () => {
+                divContent.style.color = "black";
+              };
+            };
+            divCurtainContentRight.appendChild(divContent);
+            curtain.appendChild(divCurtainContentRight);
+            divCurtainContentRight.style.display = "flex";
+            divCurtainContentRight.style.flexDirection = "column";
+          }
+        });
+      }
+    } else {
+      if (curtain.children.length < 1) {
+        listsNavBar[i].forEach((el) => {
+          let divCurtain = document.createElement("div");
+          divCurtain.textContent = el;
+          divCurtain.onmouseover = () => {
+            divCurtain.style.color = "red";
+            divCurtain.onmouseout = () => {
+              divCurtain.style.color = "black";
+            };
+          };
+          curtain.appendChild(divCurtain);
+        });
+      }
+    }
 
     let imgs = childrenOfDivLinks[i].lastElementChild.previousElementSibling;
-    console.log(imgs);
+    // console.log(imgs);
 
     imgs.style.transform = "rotateX(180deg)";
     imgs.style.transition = "linear 0.4s";
@@ -47,6 +162,7 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
     imgs.style.transition = "linear 0.4s";
     childrenOfDivLinks[i].style.color = "black";
     imgs.style.fill = "unset";
+
     curtain.style.height = "0";
     curtain.style.transition = "ease .5s";
     curtain.style.opacity = "0";
