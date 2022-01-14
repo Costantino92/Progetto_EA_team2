@@ -224,14 +224,50 @@ function expanseTwo() {
   }
 }
 
-function scrolling() {
-  NavBar.style.width = "100%";
-  NavBar.style.backgroundColor = "white";
-  NavBar.style.position = "fixed";
-  NavBar.style.top = "0";
+// function scrollingDown() {
+//   // headerDiv.style.height = "0";
+//   // headerDiv.style.top = "-40px";
+//   NavBar.style.transition = "ease-in-out 1s";
+//   headerDiv.style.transition = "ease-in-out 1s";
+//   NavBar.style.width = "100%";
+//   NavBar.style.backgroundColor = "white";
+//   NavBar.style.position = "fixed";
+//   NavBar.style.top = "0";
+// }
+
+// function scrollingOff() {
+//   NavBar.style.width = "100%";
+//   NavBar.style.backgroundColor = "white";
+//   NavBar.style.position = "static";
+// }
+
+// window.addEventListener("scroll", scrollingDown);
+// window.addEventListener("scroll", scrollingOff);
+
+function scrollDetect() {
+  let lastScroll = 0;
+
+  window.onscroll = function () {
+    let currentScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0 && lastScroll <= currentScroll) {
+      lastScroll = currentScroll;
+      NavBar.style.transition = "ease-in-out 0.3s";
+      headerDiv.style.transition = "ease-in-out 0.3s";
+      NavBar.style.width = "100%";
+      NavBar.style.backgroundColor = "white";
+      NavBar.style.position = "fixed";
+      NavBar.style.top = "0";
+    } else {
+      lastScroll = currentScroll;
+      NavBar.style.top = "40px";
+      headerDiv.style.position = "fixed";
+    }
+  };
 }
 
-NavBar.addEventListener("scroll", scrolling);
+scrollDetect();
 
 //---------------------------- AddEventListener -------------------------------------
 
