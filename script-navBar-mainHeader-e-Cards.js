@@ -61,11 +61,7 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
   let curtain = document.createElement("div");
   curtain.style.color = "black";
   curtain.style.position = "absolute";
-  if (i % 2 == 0) {
-    curtain.style.bottom = "-310px";
-  } else {
-    curtain.style.top = "60px";
-  }
+  curtain.style.top = "60px";
   curtain.style.left = "-25px";
   curtain.style.height = "0";
   curtain.style.borderRadius = "4px";
@@ -156,6 +152,7 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
   });
 
   childrenOfDivLinks[i].addEventListener("mouseout", () => {
+    // debugger;
     let imgs = childrenOfDivLinks[i].lastChild.previousElementSibling;
 
     imgs.style.transform = "rotateX(0deg)";
