@@ -170,6 +170,7 @@ function expanse() {
     // headerDiv.style.zIndex = "3";
     divFatherRed.style.opacity = "1";
     body.style.overflowY = "hidden";
+    NavBar.style.position = "unset";
   } else {
     headerDiv.style.minHeight = "40px";
     headerDiv.style.transition = "ease-in-out 0.3s";
@@ -179,6 +180,7 @@ function expanse() {
     body.style.overflowY = "unset";
     icons.removeChild(divX);
     setTimeout(() => {
+      NavBar.style.position = "fixed";
       headerDiv.removeChild(divTest);
       headerDiv.removeChild(divTestTwo);
     }, 300);
@@ -209,6 +211,7 @@ function expanseTwo() {
     icons.style.zIndex = "3";
     divFatherRedTwo.style.opacity = "1";
     body.style.overflowY = "hidden";
+    NavBar.style.position = "unset";
   } else {
     headerDiv.style.minHeight = "40px";
     headerDiv.style.transition = "ease-in-out 0.3s";
@@ -218,6 +221,7 @@ function expanseTwo() {
     body.style.overflowY = "unset";
     icons.removeChild(divX);
     setTimeout(() => {
+      NavBar.style.position = "fixed";
       headerDiv.removeChild(divTestTwo);
       headerDiv.removeChild(divTest);
     }, 300);
@@ -253,8 +257,9 @@ function scrollDetect() {
 
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
-      NavBar.style.transition = "ease-in-out 0.3s";
-      headerDiv.style.transition = "ease-in-out 0.3s";
+      headerDiv.style.top = "-40px";
+      NavBar.style.transition = "linear 0.3s";
+      headerDiv.style.transition = "linear 0.3s";
       NavBar.style.width = "100%";
       NavBar.style.backgroundColor = "white";
       NavBar.style.position = "fixed";
@@ -263,6 +268,7 @@ function scrollDetect() {
       lastScroll = currentScroll;
       NavBar.style.top = "40px";
       headerDiv.style.position = "fixed";
+      headerDiv.style.top = "0";
     }
   };
 }
