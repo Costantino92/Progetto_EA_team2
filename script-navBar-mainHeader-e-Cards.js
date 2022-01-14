@@ -160,7 +160,7 @@ function expanse() {
     headerDiv.style.minHeight = "450px";
     headerDiv.style.alignItems = "unset";
     icons.style.marginTop = "10px";
-    headerDiv.style.transition = "ease-in-out 0.4s";
+    headerDiv.style.transition = "ease-in-out 0.3s";
     headerDiv.appendChild(divTest);
     icons.appendChild(divX);
     divTest.appendChild(divFatherRed);
@@ -172,8 +172,8 @@ function expanse() {
     body.style.overflowY = "hidden";
   } else {
     headerDiv.style.minHeight = "40px";
-    headerDiv.style.transition = "ease-in-out 0.4s";
-    divFatherRed.style.transition = "linear 0.4s";
+    headerDiv.style.transition = "ease-in-out 0.3s";
+    divFatherRed.style.transition = "linear 0.3s";
     divFatherRed.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
@@ -190,7 +190,7 @@ function expanseTwo() {
     headerDiv.style.minHeight = "450px";
     headerDiv.style.alignItems = "unset";
     icons.style.marginTop = "10px";
-    headerDiv.style.transition = "ease-in-out 0.4s";
+    headerDiv.style.transition = "ease-in-out 0.3s";
     headerDiv.appendChild(divTestTwo);
     icons.appendChild(divX);
     divTestTwo.appendChild(divFatherRedTwo);
@@ -211,8 +211,8 @@ function expanseTwo() {
     body.style.overflowY = "hidden";
   } else {
     headerDiv.style.minHeight = "40px";
-    headerDiv.style.transition = "ease-in-out 0.4s";
-    divFatherRedTwo.style.transition = "linear 0.4s";
+    headerDiv.style.transition = "ease-in-out 0.3s";
+    divFatherRedTwo.style.transition = "linear 0.3s";
     divFatherRedTwo.style.opacity = "0";
     headerDiv.style.backgroundColor = "#101010";
     body.style.overflowY = "unset";
