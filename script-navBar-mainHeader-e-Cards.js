@@ -57,29 +57,18 @@ let listsNavBar = [
   risorseList,
 ];
 for (let i = 0; i < childrenOfDivLinks.length; i++) {
-  // debugger;
   let curtain = document.createElement("div");
-  curtain.style.color = "black";
-  curtain.style.position = "absolute";
-  curtain.style.top = "60px";
-  curtain.style.left = "-25px";
-  curtain.style.height = "0";
-  curtain.style.borderRadius = "4px";
-  curtain.style.width = "min-content";
-  curtain.style.backgroundColor = "white";
-  curtain.style.zIndex = "3";
-  curtain.style.opacity = "0";
-  curtain.style.transition = "ease .5s";
-  curtain.style.display = "flex";
-  curtain.style.flexDirection = "column";
+
+  curtain.classList.add("curtainEA");
   if (childrenOfDivLinks[i].children.length == 1) {
     childrenOfDivLinks[i].appendChild(curtain);
   }
   childrenOfDivLinks[i].addEventListener("mouseover", () => {
     curtain.style.opacity = "1";
-    curtain.style.height = "300px";
-    // console.log([...childrenOfDivLinks].indexOf(childrenOfDivLinks[i]));
+    curtain.style.transform = "scaleY(1)";
     if ([...childrenOfDivLinks].indexOf(childrenOfDivLinks[i]) == 0) {
+      curtain.style.paddingTop = "40px";
+      curtain.style.paddingBottom = "40px";
       // debugger;
       if (curtain.children.length < 1) {
         curtain.style.flexDirection = "row";
@@ -96,6 +85,13 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
           if (listsNavBar[i].indexOf(el) < 6) {
             let divContent = document.createElement("div");
             divContent.textContent = el;
+            divContent.style.padding = "10px 0";
+
+            if (listsNavBar[i].indexOf(el) == 0) {
+              divContent.style.fontWeight = "900";
+              divContent.style.borderBottom = "2px solid lightgrey";
+              divContent.style.marginBottom = "20px";
+            }
 
             divContent.onmouseover = () => {
               divContent.style.color = "red";
@@ -121,6 +117,13 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
             curtain.appendChild(divCurtainContentRight);
             divCurtainContentRight.style.display = "flex";
             divCurtainContentRight.style.flexDirection = "column";
+            divContent.style.padding = "10px 0";
+
+            if (listsNavBar[i].indexOf(el) == 6) {
+              divContent.style.fontWeight = "900";
+              divContent.style.borderBottom = "2px solid lightgrey";
+              divContent.style.marginBottom = "20px";
+            }
           }
         });
       }
@@ -129,6 +132,7 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
         listsNavBar[i].forEach((el) => {
           let divCurtain = document.createElement("div");
           divCurtain.textContent = el;
+          divCurtain.style.padding = "10px 0";
           divCurtain.onmouseover = () => {
             divCurtain.style.color = "red";
             divCurtain.onmouseout = () => {
@@ -160,9 +164,12 @@ for (let i = 0; i < childrenOfDivLinks.length; i++) {
     childrenOfDivLinks[i].style.color = "black";
     imgs.style.fill = "unset";
 
-    curtain.style.height = "0";
-    curtain.style.transition = "ease .5s";
-    curtain.style.opacity = "0";
+    // curtain.style.height = "0";
+    curtain.style.transition = "ease .2s";
+    curtain.style.transform = "scaleY(0)";
+    // curtain.style.opacity = "0";
+    // curtain.children.style.opacity = "0";
+    // curtain.children.style.zIndex = "-3";
   });
 }
 
