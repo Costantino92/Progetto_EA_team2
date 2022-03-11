@@ -67,7 +67,7 @@
   width: fit-content;
   margin-left: 20px;
   transition: linear 0.2s;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 .divAlignLeft {
   height: 100%;
@@ -85,7 +85,7 @@
 }
 .divLinks div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: max-content;
   margin: 0 25px;
